@@ -2860,7 +2860,9 @@ MonoBehaviour:
   - {fileID: -962952833, guid: 5423a3447af1c1b45a07323b5f6549a9, type: 3}
   - {fileID: 998264640, guid: 5423a3447af1c1b45a07323b5f6549a9, type: 3}
   - {fileID: -1836824191, guid: 5423a3447af1c1b45a07323b5f6549a9, type: 3}
-  frameTransitionDelay: 6
+  animationDelayInSeconds: 0.1
+  spriteRange: {x: 0, y: 4}
+  isAnimatating: 0
   currentFacingDirection: 0
 --- !u!114 &474642026
 MonoBehaviour:
@@ -2964,6 +2966,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   frameRate: 60
+  movementSpeed: 0.3
 --- !u!1 &482574599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,7 +3757,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,12 +6,12 @@ using UnityEngine.UI;
 public class SpriteAnimator : MonoBehaviour
 {
     [SerializeField] private Sprite[] spriteReferences;
-    [SerializeField] private int frameTransitionDelay;
+    [SerializeField] private float animationDelayInSeconds;
 
-    private int currentFrame = 0;
-    private int currentSprite = 0;
-    public Vector2 frameRange = new Vector2(0,4);
+    public Vector2 spriteRange = new Vector2(0,4);
     private Image animatedImage;
+    public bool isAnimatating = false;
+
     public enum FacingDirection
     {
         Front,
@@ -31,21 +32,6 @@ public class SpriteAnimator : MonoBehaviour
     void Update()
     {
 
-        if (currentFrame >= frameTransitionDelay)
-        {
-            currentFrame = 0;
-
-            if (currentSprite >= (int)frameRange.y)
-                currentSprite = (int)frameRange.x;
-
-            animatedImage.sprite = spriteReferences[currentSprite];
-            currentSprite++;
-        }
-        else
-        {
-            currentFrame++;
-        }
-
     }
 
     public void SetReference(FacingDirection newDirection)
@@ -55,18 +41,31 @@ public class SpriteAnimator : MonoBehaviour
         switch (newDirection)
         {
             case FacingDirection.Front:
-                frameRange = new Vector2(0, 4);
+                spriteRange = new Vector2(0, 3);
                 break;
             case FacingDirection.Back:
-                frameRange = new Vector2(5, 9);
+                spriteRange = new Vector2(12, 15);
                 break;
             case FacingDirection.Left:
-                frameRange = new Vector2(10, 14);
+                spriteRange = new Vector2(4, 7);
                 break;
             case FacingDirection.Right:
-                frameRange = new Vector2(15, 19);
+                spriteRange = new Vector2(8, 11);
                 break;
         }
+        StartCoroutine(PerformMove());
+    }
 
+    private IEnumerator PerformMove()
+    {
+        isAnimatating = true;
+        int currentSprite = (int)spriteRange.x;
+        while(currentSprite != (int)spriteRange.y)
+        {
+            animatedImage.sprite = spriteReferences[currentSprite];
+            currentSprite++;
+            yield return new WaitForSeconds(animationDelayInSeconds);
+        }
+        isAnimatating = false;
     }
 }
