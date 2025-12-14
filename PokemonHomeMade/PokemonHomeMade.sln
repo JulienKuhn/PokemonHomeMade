@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{A52BC872-6936-ACD3-29DD-C768DA4F16B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirenix.OdinInspector.Modules.UnityMathematics", "Sirenix.OdinInspector.Modules.UnityMathematics.csproj", "{F1141461-137C-071C-1DE4-3D5E7D32D8C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{A52BC872-6936-ACD3-29DD-C768DA4F16B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52BC872-6936-ACD3-29DD-C768DA4F16B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52BC872-6936-ACD3-29DD-C768DA4F16B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1141461-137C-071C-1DE4-3D5E7D32D8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1141461-137C-071C-1DE4-3D5E7D32D8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1141461-137C-071C-1DE4-3D5E7D32D8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1141461-137C-071C-1DE4-3D5E7D32D8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

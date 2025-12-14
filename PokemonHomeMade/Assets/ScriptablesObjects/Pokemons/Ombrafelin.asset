@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: OmbraFelin
   PokemonID: 1
   Level: 1
-  FrontVisuals: {fileID: 0}
+  FrontVisuals: {fileID: 21300000, guid: e2316232b145c994da9de227ad5e2d5f, type: 3}
   BackVisuals: {fileID: 0}
   SplashVisual: {fileID: 0}
   WorldVisuals: {fileID: 0}
