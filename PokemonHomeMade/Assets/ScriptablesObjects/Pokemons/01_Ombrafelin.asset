@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0040ee17d2c34d1478993ccbf829e68b, type: 3}
+  m_Name: 01_Ombrafelin
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonData
+  PokemonID: 1
+  PokemonName: Ombrafelin
+  Description: Description de test pour Ombrafelin
+  PokemonTypes: 
+  FrontVisuals: {fileID: 21300000, guid: e2316232b145c994da9de227ad5e2d5f, type: 3}
+  BackVisuals: {fileID: 21300000, guid: 23458cd6fdc0899448539bba6e142313, type: 3}
+  SplashVisual: {fileID: 0}
+  WorldVisuals: {fileID: 0}
+  NextEvolution: {fileID: 11400000, guid: 1b83172ae0604db45ab8b6fff91b8741, type: 2}
+  LevelRequiredBeforeEvol: 12
+  SpellsByLevel:
+  - level: 0
+    spell: {fileID: 11400000, guid: 8adc78ad0abe5a741bec299c3f8870ae, type: 2}
+  - level: 0
+    spell: {fileID: 11400000, guid: d213cc3b3e1fcd447aaa07c9bfbc06e8, type: 2}
+  BaseHP: 40
+  BaseAttack: 45
+  BaseDefense: 35
+  BaseAttackSPE: 40
+  BaseDefenseSPE: 40
+  BaseSpeed: 90
+  MalePercentage: 50
+  Height: 3
+  Weight: 1
+  CaptureRatio: 200
