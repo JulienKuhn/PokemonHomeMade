@@ -18,9 +18,10 @@ MonoBehaviour:
   moveType: 9
   moveIcon: {fileID: 0}
   category: 0
-  power: 10
+  power: 3
   accuracy: 100
   maxPP: 0
+  isSelfCasted: 0
   flatCritChance: 6.25
   hasSecondaryEffect: 0
   effectChance: 0

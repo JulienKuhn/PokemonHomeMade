@@ -24,6 +24,7 @@ public class SelectionMenuController : MonoBehaviour
     public Action<PokemonSpell> OnSpellSelected;
 
     private Coroutine descriptionCoroutine = null;
+    private bool canSwapPanel = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,10 +37,10 @@ public class SelectionMenuController : MonoBehaviour
         bagBTN.onClick.AddListener(OpenBag);
         runBTN.onClick.AddListener(TryToRun);
 
-        spell01.onClick.AddListener(() => OnSpellSelected.Invoke(spells[0]));
-        spell02.onClick.AddListener(() => OnSpellSelected.Invoke(spells[1]));
-        spell03.onClick.AddListener(() => OnSpellSelected.Invoke(spells[2]));
-        spell04.onClick.AddListener(() => OnSpellSelected.Invoke(spells[3]));
+        spell01.onClick.AddListener(() => OnSpellChoosen(0));
+        spell02.onClick.AddListener(() => OnSpellChoosen(1));
+        spell03.onClick.AddListener(() => OnSpellChoosen(2));
+        spell04.onClick.AddListener(() => OnSpellChoosen(3));
     }
 
     public void OpenChoices(PokemonSpell[] newSpells, string description)
@@ -50,6 +51,7 @@ public class SelectionMenuController : MonoBehaviour
         SetupSpells();
         choicePanel.SetActive(true);
         spellPanel.SetActive(false);
+        canSwapPanel = true;
     }
 
     private void SetupSpells()
@@ -73,18 +75,24 @@ public class SelectionMenuController : MonoBehaviour
 
     private void OpenFight()
     {
+        if (!canSwapPanel) return;
+
         choicePanel.SetActive(false);
         spellPanel.SetActive(true);
     }
 
     private void OpenBag()
     {
+        if (!canSwapPanel) return;
+
         DoDescription("Fonction OpenBag non implémentée");
         Debug.Log("OpenBAG");
     }
 
     private void TryToRun()
     {
+        if (!canSwapPanel) return;
+
         DoDescription("Fonction TryToRun non implémentée");
         Debug.Log("TryToRun");
     }
@@ -104,5 +112,13 @@ public class SelectionMenuController : MonoBehaviour
         descriptionField.DOText(description, .4f);
         yield return new WaitForSeconds(.5f);
         descriptionCoroutine = null;
+    }
+
+    private void OnSpellChoosen(int spellID)
+    {
+        canSwapPanel = false;
+        choicePanel.SetActive(true);
+        spellPanel.SetActive(false);
+        OnSpellSelected.Invoke(spells[spellID]);
     }
 }

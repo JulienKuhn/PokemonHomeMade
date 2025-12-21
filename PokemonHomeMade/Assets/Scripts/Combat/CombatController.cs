@@ -1,10 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using TMPro.EditorUtilities;
-using DG.Tweening;
-using System;
+using UnityEngine.SceneManagement;
 
 public class CombatController : MonoBehaviour
 {
@@ -19,12 +15,13 @@ public class CombatController : MonoBehaviour
 
     private PokemonSpell nextSpell = null;
     [SerializeField] private SelectionMenuController selectionMenuController;
+    [SerializeField] private CombatPanelController combatPanelController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        CurrentOpponentPokemon = new PokemonEntity(testpok,5);
+        CurrentOpponentPokemon = new PokemonEntity(testpok, 5);
         CurrentPlayerPokemon = new PokemonEntity(testpok, 4);
 
         // Start Combat Opening Animation
@@ -34,8 +31,15 @@ public class CombatController : MonoBehaviour
     private IEnumerator OpenCombat()
     {
         Debug.Log("Opent Combat");
-        selectionMenuController.DoDescription("Oh non, un combat de con...");
-        yield return new WaitForSeconds(.5f);
+
+        selectionMenuController.DoDescription($"Adversaire fait appel à {CurrentOpponentPokemon.Name}");
+        combatPanelController.StartOpponentOpening(CurrentOpponentPokemon.Name, CurrentOpponentPokemon.Level, CurrentOpponentPokemon.CurrentHP / CurrentOpponentPokemon.MaxHP);
+        yield return new WaitForSeconds(5f);
+
+        selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} en avant !");
+        combatPanelController.StartPlayerOpening(CurrentPlayerPokemon.Name, CurrentPlayerPokemon.Level, CurrentPlayerPokemon.CurrentHP / CurrentPlayerPokemon.MaxHP, CurrentPlayerPokemon.CurrentExp);
+        yield return new WaitForSeconds(3f);
+
         // Start Combat Loop
         StartCoroutine(CombatLoop());
     }
@@ -70,32 +74,56 @@ public class CombatController : MonoBehaviour
             isGameOver = CheckIfGameIsOver();
         }
 
-        if (isVictory) 
+        if (isVictory)
         {
-            // Do Victory Screen
+            selectionMenuController.DoDescription($"Victoire ! Nouvelle partie dans 5 secondes");
         }
         else
         {
             // Do GameOver Screen
+            selectionMenuController.DoDescription($"Defaite ! Nouvelle partie dans 5 secondes");
             // Teleport Player to Latest medical center
             // Start respawn dialogue
         }
+
+        yield return new WaitForSeconds(6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
     }
 
     private IEnumerator DoPlayerTurn()
     {
-        Debug.Log("DoPlayerTurn");
-        isTurnOnGoing = true;
-        yield return null;
-        selectionMenuController.OpenChoices(CurrentPlayerPokemon.Spells, $"Que doit faire {CurrentPlayerPokemon.Name} ?");
-        nextSpell = null;
-        selectionMenuController.OnSpellSelected += OnActionRecieved;
-        yield return new WaitWhile(()=> nextSpell == null);
+        if (!isGameOver)
+        {
+            Debug.Log("DoPlayerTurn");
+            isTurnOnGoing = true;
+            yield return null;
+            selectionMenuController.OpenChoices(CurrentPlayerPokemon.Spells, $"Que doit faire {CurrentPlayerPokemon.Name} ?");
+            nextSpell = null;
+            selectionMenuController.OnSpellSelected += OnActionRecieved;
+            yield return new WaitWhile(() => nextSpell == null);
 
-        selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} lance {nextSpell.name} !");
-        yield return new WaitForSeconds(1f);
-        yield return null;
-        isTurnOnGoing = false;
+            selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} lance {nextSpell.name} !");
+            yield return new WaitForSeconds(1f);
+            if (nextSpell.category != SpellCategory.Status)
+            {
+                CurrentOpponentPokemon.ChangeHP(nextSpell.power * -1);
+                float newAmount = (float)CurrentOpponentPokemon.CurrentHP / (float)CurrentOpponentPokemon.MaxHP;
+                combatPanelController.ChangeOpponentLifeAmount(newAmount);
+            }
+
+            yield return null;
+
+            if (CurrentOpponentPokemon.CurrentHP <= 0)
+            {
+                selectionMenuController.DoDescription($"{CurrentOpponentPokemon.Name} adverse est vaincu");
+                yield return new WaitForSeconds(1f);
+                combatPanelController.RecallOpponentPokemon();
+                isGameOver = true;
+                isVictory = true;
+            }
+
+            isTurnOnGoing = false;
+        }
     }
 
     private void OnActionRecieved(PokemonSpell spell)
@@ -106,20 +134,48 @@ public class CombatController : MonoBehaviour
 
     private IEnumerator DoComputerTurn()
     {
-        Debug.Log("DoComputerTurn");
-        isTurnOnGoing = true;
-        yield return null;
+        if (!isGameOver)
+        {
+            Debug.Log("DoComputerTurn");
+            isTurnOnGoing = true;
+            yield return null;
 
-        selectionMenuController.DoDescription($"Au tour de {CurrentOpponentPokemon.Name}");
-        yield return new WaitForSeconds(.5f);
+            selectionMenuController.DoDescription($"Au tour du {CurrentOpponentPokemon.Name} adverse");
+            yield return new WaitForSeconds(2f);
 
-        yield return null;
-        isTurnOnGoing = false;
+            int rand = UnityEngine.Random.Range(0, 100);
+            if(rand > 60)
+            {
+                selectionMenuController.DoDescription($"{CurrentOpponentPokemon.Name} adverse ne fait rien");
+            }
+            else
+            {
+                selectionMenuController.DoDescription($"{CurrentOpponentPokemon.Name} adverse utilise Griffure");
+
+                CurrentPlayerPokemon.ChangeHP(-5);
+                float newAmount = (float)CurrentPlayerPokemon.CurrentHP / (float)CurrentPlayerPokemon.MaxHP;
+                combatPanelController.ChangePlayerLifeAmount(newAmount);
+            }
+            yield return new WaitForSeconds(2f);
+
+            yield return null;
+
+            if (CurrentPlayerPokemon.CurrentHP <= 0)
+            {
+                selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} est vaincu");
+                yield return new WaitForSeconds(1f);
+                combatPanelController.RecallPlayerPokemon();
+                isGameOver = true;
+                isVictory = false;
+            }
+
+            isTurnOnGoing = false;
+        }
     }
 
     public bool isPlayerStartingTurn()
     {
-        if(CurrentPlayerPokemon.Speed == CurrentOpponentPokemon.Speed)
+        if (CurrentPlayerPokemon.Speed == CurrentOpponentPokemon.Speed)
         {
             int rand = UnityEngine.Random.Range(0, 100);
             return rand > 50;

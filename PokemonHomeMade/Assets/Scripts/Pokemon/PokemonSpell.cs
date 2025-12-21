@@ -15,6 +15,7 @@ public class PokemonSpell : ScriptableObject
     public int power;             // Base damage (e.g., 40 for Tackle, 90 for Thunderbolt)
     public int accuracy = 100;    // Percentage (0 to 100)
     public int maxPP;             // Maximum uses
+    public bool isSelfCasted;
 
     [Header("Critical Hit")]
     [Range(0f, 100f)]

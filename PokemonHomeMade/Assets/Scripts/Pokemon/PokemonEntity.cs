@@ -34,6 +34,7 @@ public class PokemonEntity
     public PokemonNature Nature { get; private set; }
 
     public PokemonSpell[] Spells { get; private set; }
+    public float CurrentExp { get; private set; }
 
     /// <summary>
     /// Constructor to create a new Pokemon instance.
@@ -58,7 +59,6 @@ public class PokemonEntity
         {
             if(level >= spell.level)
             {
-                Debug.Log($"{Name} apprend {spell.spell.moveName} at {i}");
                 Spells[i] = spell.spell;
                 i++;
             }
