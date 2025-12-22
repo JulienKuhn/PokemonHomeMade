@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -97,10 +98,19 @@ public class CombatController : MonoBehaviour
             Debug.Log("DoPlayerTurn");
             isTurnOnGoing = true;
             yield return null;
-            selectionMenuController.OpenChoices(CurrentPlayerPokemon.Spells, $"Que doit faire {CurrentPlayerPokemon.Name} ?");
+            selectionMenuController.OpenChoices(CurrentPlayerPokemon.LearnedSpells, $"Que doit faire {CurrentPlayerPokemon.Name} ?");
             nextSpell = null;
             selectionMenuController.OnSpellSelected += OnActionRecieved;
             yield return new WaitWhile(() => nextSpell == null);
+
+            if (CurrentPlayerPokemon.LearnedSpells.ContainsKey(nextSpell))
+            {
+                CurrentPlayerPokemon.LearnedSpells[nextSpell]--;
+
+                // Optionnel : s'assurer que les PP ne tombent pas sous 0
+                if (CurrentPlayerPokemon.LearnedSpells[nextSpell] < 0)
+                    CurrentPlayerPokemon.LearnedSpells[nextSpell] = 0;
+            }
 
             selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} lance {nextSpell.name} !");
             yield return new WaitForSeconds(1f);

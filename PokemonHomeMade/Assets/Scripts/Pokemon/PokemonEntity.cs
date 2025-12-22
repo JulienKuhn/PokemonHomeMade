@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -33,7 +34,7 @@ public class PokemonEntity
 
     public PokemonNature Nature { get; private set; }
 
-    public PokemonSpell[] Spells { get; private set; }
+    public Dictionary<PokemonSpell,int> LearnedSpells { get; private set; }
     public float CurrentExp { get; private set; }
 
     /// <summary>
@@ -53,14 +54,12 @@ public class PokemonEntity
         CurrentHP = MaxHP;
 
 
-        Spells = new PokemonSpell[4];
-        int i = 0;
+        LearnedSpells = new Dictionary<PokemonSpell, int>();
         foreach (var spell in data.SpellsByLevel)
         {
             if(level >= spell.level)
             {
-                Spells[i] = spell.spell;
-                i++;
+                LearnedSpells.Add(spell.spell, spell.spell.maxPP);
             }
         }
     }

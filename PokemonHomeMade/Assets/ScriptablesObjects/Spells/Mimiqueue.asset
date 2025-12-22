@@ -20,7 +20,8 @@ MonoBehaviour:
   category: 2
   power: 10
   accuracy: 100
-  maxPP: 0
+  maxPP: 5
+  isSelfCasted: 0
   flatCritChance: 6.25
   hasSecondaryEffect: 1
   effectChance: 80

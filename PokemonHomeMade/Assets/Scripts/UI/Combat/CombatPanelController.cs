@@ -50,6 +50,9 @@ public class CombatPanelController : MonoBehaviour
 
     private IEnumerator DOPlayerOpening()
     {
+        PlayerPokemon.color = Color.red;
+        yield return null;
+        PlayerPokemon.DOColor(Color.white,.5f).SetEase(Ease.InCirc);
         PlayerPokemon.transform.DOScale(1, 1).SetEase(Ease.OutBounce);
         yield return new WaitForSeconds(1.2f);
         PlayerInfoPanelContainter.DOScaleX(1, .5f);
@@ -58,6 +61,9 @@ public class CombatPanelController : MonoBehaviour
     }
     private IEnumerator DOOpponentOpening()
     {
+        OpponentPokemon.color = Color.red;
+        yield return null;
+        OpponentPokemon.DOColor(Color.white, .5f).SetEase(Ease.InCirc);
         OpponentPokemon.transform.DOScale(1, 1).SetEase(Ease.OutBounce);
         yield return new WaitForSeconds(1.2f);
         OpponentInfoPanelContainter.DOScaleX(1, .5f);
@@ -73,14 +79,39 @@ public class CombatPanelController : MonoBehaviour
         if (!isHealing)
         {
             StartCoroutine(DoBlink(OpponentPokemon));
+            StartCoroutine(DoPlayerATK());
         }
     }
 
     private IEnumerator DoBlink(Image img)
     {
-        img.DOFade(0, .7f).SetEase(Ease.InOutElastic);
-        yield return new WaitForSeconds(.8f);
-        img.DOFade(1, .7f).SetEase(Ease.InOutElastic);
+        yield return new WaitForSeconds(.5f);
+        img.DOFade(0f, .4f).SetEase(Ease.InOutElastic);
+        yield return new WaitForSeconds(.45f);
+        img.DOFade(1, .4f).SetEase(Ease.InOutElastic);
+    }
+
+    private IEnumerator DoPlayerATK()
+    {
+        float x = PlayerPokemon.transform.position.x;
+        float y = PlayerPokemon.transform.position.y;
+
+        PlayerPokemon.transform.DOMoveX(x + x / 5, .5f).SetEase(Ease.InCirc);
+        PlayerPokemon.transform.DOMoveY(y + y / 5, .5f).SetEase(Ease.InCirc);
+        yield return new WaitForSeconds(.6f);
+        PlayerPokemon.transform.DOMoveX(x, .5f).SetEase(Ease.OutCirc);
+        PlayerPokemon.transform.DOMoveY(y, .5f).SetEase(Ease.OutCirc);
+    }
+    private IEnumerator DoOpponentATK()
+    {
+        float x = OpponentPokemon.transform.position.x;
+        float y = OpponentPokemon.transform.position.y;
+
+        OpponentPokemon.transform.DOMoveX(x - x / 5, .5f).SetEase(Ease.InCirc);
+        OpponentPokemon.transform.DOMoveY(y - y / 5, .5f).SetEase(Ease.InCirc);
+        yield return new WaitForSeconds(.6f);
+        OpponentPokemon.transform.DOMoveX(x, .5f).SetEase(Ease.OutCirc);
+        OpponentPokemon.transform.DOMoveY(y, .5f).SetEase(Ease.OutCirc);
     }
 
     public void ChangePlayerLifeAmount(float newLifeAmount, bool isHealing = false)
@@ -90,6 +121,7 @@ public class CombatPanelController : MonoBehaviour
         if (!isHealing)
         {
             StartCoroutine(DoBlink(PlayerPokemon));
+            StartCoroutine(DoOpponentATK());
         }
     }
     public void ChangePlayerExpAmount(float newLifeAmount, bool doItSlowly = false)

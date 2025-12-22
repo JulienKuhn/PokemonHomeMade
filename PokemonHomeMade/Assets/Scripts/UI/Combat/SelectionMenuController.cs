@@ -1,6 +1,8 @@
 using DG.Tweening;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -18,8 +20,9 @@ public class SelectionMenuController : MonoBehaviour
     [SerializeField] private GameObject spellPanel;
     [SerializeField] private Button spell01, spell02, spell03, spell04;
     [SerializeField] private TextMeshProUGUI spell01txt, spell02txt, spell03txt, spell04txt;
+    [SerializeField] private TextMeshProUGUI pp01txt, pp02txt, pp03txt, pp04txt;
 
-    private PokemonSpell[] spells = new PokemonSpell[4];
+    private Dictionary<PokemonSpell, int> LearnedSpells;
 
     public Action<PokemonSpell> OnSpellSelected;
 
@@ -43,11 +46,11 @@ public class SelectionMenuController : MonoBehaviour
         spell04.onClick.AddListener(() => OnSpellChoosen(3));
     }
 
-    public void OpenChoices(PokemonSpell[] newSpells, string description)
+    public void OpenChoices(Dictionary<PokemonSpell, int> learnedSpells, string description)
     {
         descriptionField.text = "";
         descriptionField.DOText(description, .4f);
-        spells = newSpells;
+        LearnedSpells = learnedSpells;
         SetupSpells();
         choicePanel.SetActive(true);
         spellPanel.SetActive(false);
@@ -56,21 +59,44 @@ public class SelectionMenuController : MonoBehaviour
 
     private void SetupSpells()
     {
-        bool isSpell = spells[0] != null;
-        spell01.gameObject.SetActive(isSpell);
-        if (isSpell) spell01txt.text = spells[0].moveName;
+        spell01.gameObject.SetActive(false);
+        spell02.gameObject.SetActive(false);
+        spell03.gameObject.SetActive(false);
+        spell04.gameObject.SetActive(false);
 
-        isSpell = spells[1] != null;
-        spell02.gameObject.SetActive(isSpell);
-        if (isSpell) spell02txt.text = spells[1].moveName;
-
-        isSpell = spells[2] != null;
-        spell03.gameObject.SetActive(isSpell);
-        if (isSpell) spell03txt.text = spells[2].moveName;
-
-        isSpell = spells[3] != null;
-        spell04.gameObject.SetActive(isSpell);
-        if (isSpell) spell04txt.text = spells[3].moveName;
+        int i = 0;
+        foreach (var spell in LearnedSpells)
+        {
+            if (i == 0)
+            {
+                spell01.gameObject.SetActive(true);
+                spell01.interactable = spell.Value > 0;
+                spell01txt.text = spell.Key.moveName;
+                pp01txt.text = spell.Value.ToString() + "/" + spell.Key.maxPP;
+            }
+            else if (i == 1)
+            {
+                spell02.gameObject.SetActive(true);
+                spell02.interactable = spell.Value > 0;
+                spell02txt.text = spell.Key.moveName;
+                pp02txt.text = spell.Value.ToString() + "/" + spell.Key.maxPP;
+            }
+            else if (i == 2)
+            {
+                spell03.gameObject.SetActive(true);
+                spell03.interactable = spell.Value > 0;
+                spell03txt.text = spell.Key.moveName;
+                pp03txt.text = spell.Value.ToString() + "/" + spell.Key.maxPP;
+            }
+            else if (i == 3)
+            {
+                spell04.gameObject.SetActive(true);
+                spell04.interactable = spell.Value > 0;
+                spell04txt.text = spell.Key.moveName;
+                pp04txt.text = spell.Value.ToString() + "/" + spell.Key.maxPP;
+            }
+            i++;
+        }
     }
 
     private void OpenFight()
@@ -116,9 +142,17 @@ public class SelectionMenuController : MonoBehaviour
 
     private void OnSpellChoosen(int spellID)
     {
+        // Toujours vérifier si l'index est valide pour éviter un crash
+        if (spellID < 0 || spellID >= LearnedSpells.Count) return;
+
         canSwapPanel = false;
         choicePanel.SetActive(true);
         spellPanel.SetActive(false);
-        OnSpellSelected.Invoke(spells[spellID]);
+
+        // .ElementAt(index) permet de simuler un accès par index sur les clés
+        PokemonSpell selectedSpell = LearnedSpells.Keys.ElementAt(spellID);
+
+        // Utilise ?.Invoke pour éviter une erreur si personne n'écoute l'Action
+        OnSpellSelected?.Invoke(selectedSpell);
     }
 }
