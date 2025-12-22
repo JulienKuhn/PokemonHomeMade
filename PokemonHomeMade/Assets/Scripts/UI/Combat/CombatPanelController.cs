@@ -71,18 +71,6 @@ public class CombatPanelController : MonoBehaviour
         OpponentInnerCanvas.DOFade(1, .4f);
     }
 
-    public void ChangeOpponentLifeAmount(float newLifeAmount, bool isHealing = false)
-    {
-        OpponentLifeBar.DOFillAmount(newLifeAmount, 1);
-        OpponentLifeBar.transform.DOShakePosition(1, isHealing ? .3f:1);
-
-        if (!isHealing)
-        {
-            StartCoroutine(DoBlink(OpponentPokemon));
-            StartCoroutine(DoPlayerATK());
-        }
-    }
-
     private IEnumerator DoBlink(Image img)
     {
         yield return new WaitForSeconds(.5f);
@@ -114,16 +102,29 @@ public class CombatPanelController : MonoBehaviour
         OpponentPokemon.transform.DOMoveY(y, .5f).SetEase(Ease.OutCirc);
     }
 
+    public void ChangeOpponentLifeAmount(float newLifeAmount, bool isHealing = false)
+    {
+        OpponentLifeBar.DOFillAmount(newLifeAmount, 1);
+        OpponentLifeBar.transform.DOShakePosition(2, isHealing ? .3f : 5);
+
+        if (!isHealing)
+        {
+            StartCoroutine(DoBlink(OpponentPokemon));
+            StartCoroutine(DoPlayerATK());
+        }
+    }
+
     public void ChangePlayerLifeAmount(float newLifeAmount, bool isHealing = false)
     {
         PlayerLifeBar.DOFillAmount(newLifeAmount, 1);
-        PlayerLifeBar.transform.DOShakePosition(1, isHealing ? .3f : 1);
+        PlayerLifeBar.transform.DOShakePosition(2, isHealing ? .3f : 5);
         if (!isHealing)
         {
             StartCoroutine(DoBlink(PlayerPokemon));
             StartCoroutine(DoOpponentATK());
         }
     }
+
     public void ChangePlayerExpAmount(float newLifeAmount, bool doItSlowly = false)
     {
         PlayerExpBar.DOFillAmount(newLifeAmount, 1);
