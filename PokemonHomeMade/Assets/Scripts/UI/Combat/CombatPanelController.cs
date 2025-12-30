@@ -155,4 +155,5 @@ public class CombatPanelController : MonoBehaviour
     {
         PlayerPokemon.transform.DOScale(0, 1).SetEase(Ease.InBounce);
     }
+
 }

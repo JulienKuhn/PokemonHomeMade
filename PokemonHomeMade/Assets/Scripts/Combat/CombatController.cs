@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CombatController : MonoBehaviour
 {
+    public static CombatController Instance;
     public bool isGameOver;
     public bool isTurnOnGoing;
     private bool isVictory;
@@ -21,7 +22,7 @@ public class CombatController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Instance = this;
         CurrentOpponentPokemon = new PokemonEntity(testpok, 5);
         CurrentPlayerPokemon = new PokemonEntity(testpok, 4);
 
@@ -123,15 +124,6 @@ public class CombatController : MonoBehaviour
 
             yield return null;
 
-            if (CurrentOpponentPokemon.CurrentHP <= 0)
-            {
-                selectionMenuController.DoDescription($"{CurrentOpponentPokemon.Name} adverse est vaincu");
-                yield return new WaitForSeconds(1f);
-                combatPanelController.RecallOpponentPokemon();
-                isGameOver = true;
-                isVictory = true;
-            }
-
             isTurnOnGoing = false;
         }
     }
@@ -169,16 +161,6 @@ public class CombatController : MonoBehaviour
             yield return new WaitForSeconds(2f);
 
             yield return null;
-
-            if (CurrentPlayerPokemon.CurrentHP <= 0)
-            {
-                selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} est vaincu");
-                yield return new WaitForSeconds(1f);
-                combatPanelController.RecallPlayerPokemon();
-                isGameOver = true;
-                isVictory = false;
-            }
-
             isTurnOnGoing = false;
         }
     }
@@ -196,6 +178,27 @@ public class CombatController : MonoBehaviour
 
     public bool CheckIfGameIsOver()
     {
+        if (CurrentPlayerPokemon.CurrentHP <= 0)
+        {
+            selectionMenuController.DoDescription($"{CurrentPlayerPokemon.Name} est vaincu");
+            combatPanelController.RecallPlayerPokemon();
+            isGameOver = true;
+            isVictory = false;
+        }
+
+        if (CurrentOpponentPokemon.CurrentHP <= 0)
+        {
+            selectionMenuController.DoDescription($"{CurrentOpponentPokemon.Name} est vaincu");
+            combatPanelController.RecallOpponentPokemon();
+            isGameOver = true;
+            isVictory = true;
+        }
         return isGameOver;
+    }
+    public void KillOpponent()
+    {
+        CurrentOpponentPokemon.ChangeHP(-9999999);
+        combatPanelController.ChangeOpponentLifeAmount(0f);
+        isTurnOnGoing = false;
     }
 }
