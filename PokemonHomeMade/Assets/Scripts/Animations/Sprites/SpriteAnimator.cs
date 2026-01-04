@@ -10,10 +10,9 @@ public class SpriteAnimator : MonoBehaviour
     [SerializeField] private float animationDelayInSeconds;
 
     public Vector2 spriteRange = new Vector2(0,4);
-    private Image animatedImage;
+    [SerializeField] private Image animatedImage;
     public bool isAnimatating = false;
     private Coroutine animCo;
-    private Tweener animTweener;
 
     public enum FacingDirection
     {
@@ -27,7 +26,7 @@ public class SpriteAnimator : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        animatedImage = GetComponent<Image>();
+        //animatedImage = GetComponent<Image>();
         SetReference(currentFacingDirection);
     }
 
