@@ -1,11 +1,13 @@
 using DG.Tweening;
+using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MenuCardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MenuCardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [Header("References")]
     [SerializeField] private RectTransform NewGameContainer;
@@ -14,11 +16,11 @@ public class MenuCardController : MonoBehaviour, IPointerEnterHandler, IPointerE
     [SerializeField] private Outline ContinueOutline;
     [SerializeField] private TextMeshProUGUI ContinueText;
     private bool isNewGame = true;
+    public Action OnClick;
     // Cette méthode remplace ton AddListener dans le Start
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Souris entrée !");
         if (isNewGame)
         {
             // .Kill() permet d'arrêter l'animation précédente si on survole très vite
@@ -34,7 +36,6 @@ public class MenuCardController : MonoBehaviour, IPointerEnterHandler, IPointerE
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Souris sortie !");
         if (isNewGame)
         {
             NewGameContainer.DOScale(1.0f, 0.5f);
@@ -59,5 +60,10 @@ public class MenuCardController : MonoBehaviour, IPointerEnterHandler, IPointerE
         NewGameContainer.gameObject.SetActive(false);
         ContinueContainer.gameObject.SetActive(true);
         isNewGame = false;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        OnClick.Invoke();
     }
 }
