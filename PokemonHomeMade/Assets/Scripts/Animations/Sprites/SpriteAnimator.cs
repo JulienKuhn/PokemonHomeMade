@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class SpriteAnimator : MonoBehaviour
     public Vector2 spriteRange = new Vector2(0,4);
     private Image animatedImage;
     public bool isAnimatating = false;
+    private Coroutine animCo;
+    private Tweener animTweener;
 
     public enum FacingDirection
     {
@@ -53,7 +56,11 @@ public class SpriteAnimator : MonoBehaviour
                 spriteRange = new Vector2(8, 11);
                 break;
         }
-        StartCoroutine(PerformMove());
+
+        if (animCo != null)
+            StopCoroutine(animCo);
+
+        animCo=StartCoroutine(PerformMove());
     }
 
     private IEnumerator PerformMove()

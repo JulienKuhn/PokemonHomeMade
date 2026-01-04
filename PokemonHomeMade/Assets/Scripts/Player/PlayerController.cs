@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,56 +21,35 @@ public class PlayerController : MonoBehaviour
         Application.targetFrameRate = frameRate;
     }
 
-    private void OnEnable()
-    {
-        moveAction.Enable(); 
-        moveAction.performed += OnMovePerformed;
-    }
-
-    private void OnDisable()
-    {
-        moveAction.Disable();
-        moveAction.performed -= OnMovePerformed;
-    }
-
-    private void OnMovePerformed(InputAction.CallbackContext context)
-    {
-        if (!canMove)
-            return;
-
-        Vector2 input = context.ReadValue<Vector2>();
-
-        Console.Write(input.ToString());
-
-        if (input.x > 0)
-        {
-            animator.SetReference(SpriteAnimator.FacingDirection.Right);
-            MoveTo(new Vector2(1, 0));
-        }
-        else if (input.x < 0)
-        {
-            animator.SetReference(SpriteAnimator.FacingDirection.Left);
-            MoveTo(new Vector2(-1, 0));
-        }
-        else if (input.y > 0)
-        {
-            animator.SetReference(SpriteAnimator.FacingDirection.Back);
-            MoveTo(new Vector2(0, -1));
-        }
-        else if (input.y < 0)
-        {
-            animator.SetReference(SpriteAnimator.FacingDirection.Front);
-            MoveTo(new Vector2(0, 1));
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
+        var keyboard = Keyboard.current;
+        if (keyboard == null) return;
 
+        if (canMove && keyboard.upArrowKey.isPressed)
+        {
+            animator.SetReference(SpriteAnimator.FacingDirection.Back);
+            StartCoroutine(MoveTo(new Vector2(0, -1)));
+        } 
+        else if (canMove && keyboard.downArrowKey.isPressed)
+        {
+            animator.SetReference(SpriteAnimator.FacingDirection.Front);
+            StartCoroutine(MoveTo(new Vector2(0, 1)));
+        }
+        else if (canMove && keyboard.leftArrowKey.isPressed)
+        {
+            animator.SetReference(SpriteAnimator.FacingDirection.Left);
+            StartCoroutine(MoveTo(new Vector2(-1, 0)));
+        }
+        else if (canMove && keyboard.rightArrowKey.isPressed)
+        {
+            animator.SetReference(SpriteAnimator.FacingDirection.Right);
+            StartCoroutine(MoveTo(new Vector2(1, 0)));
+        }
     }
 
-    private void MoveTo(Vector2 relativeMovement)
+    private IEnumerator MoveTo(Vector2 relativeMovement)
     {
         canMove = false;
         Vector2 nextTile = currentTile + relativeMovement;
@@ -78,8 +58,10 @@ public class PlayerController : MonoBehaviour
 
         if (destinationTile && destinationTile.isWalkable)
         { 
-            transform.DOMove(destinationTile.transform.position, movementSpeed).SetEase(Ease.Linear).OnComplete(()=> canMove=true);
+            transform.DOMove(destinationTile.transform.position, movementSpeed).SetEase(Ease.Linear);
             currentTile = nextTile;
+            yield return new WaitForSeconds(movementSpeed);
         }
+        canMove = true;
     }
 }
