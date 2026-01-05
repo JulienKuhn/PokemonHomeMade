@@ -29,22 +29,22 @@ public class PlayerController : MonoBehaviour
 
         if (canMove && keyboard.upArrowKey.isPressed)
         {
-            animator.SetReference(SpriteAnimator.FacingDirection.Back);
+            animator.SetReference(SpriteAnimator.FacingDirection.Back, movementSpeed);
             StartCoroutine(MoveTo(new Vector2(0, -1)));
         } 
         else if (canMove && keyboard.downArrowKey.isPressed)
         {
-            animator.SetReference(SpriteAnimator.FacingDirection.Front);
+            animator.SetReference(SpriteAnimator.FacingDirection.Front, movementSpeed);
             StartCoroutine(MoveTo(new Vector2(0, 1)));
         }
         else if (canMove && keyboard.leftArrowKey.isPressed)
         {
-            animator.SetReference(SpriteAnimator.FacingDirection.Left);
+            animator.SetReference(SpriteAnimator.FacingDirection.Left, movementSpeed);
             StartCoroutine(MoveTo(new Vector2(-1, 0)));
         }
         else if (canMove && keyboard.rightArrowKey.isPressed)
         {
-            animator.SetReference(SpriteAnimator.FacingDirection.Right);
+            animator.SetReference(SpriteAnimator.FacingDirection.Right, movementSpeed);
             StartCoroutine(MoveTo(new Vector2(1, 0)));
         }
     }
@@ -60,8 +60,9 @@ public class PlayerController : MonoBehaviour
         { 
             transform.DOMove(destinationTile.transform.position, movementSpeed).SetEase(Ease.Linear);
             currentTile = nextTile;
-            yield return new WaitForSeconds(movementSpeed);
+            yield return new WaitForSeconds(movementSpeed - 0.016666f);
         }
+        animator.isAnimatating = false;
         canMove = true;
     }
 }

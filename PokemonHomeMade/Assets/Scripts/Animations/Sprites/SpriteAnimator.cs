@@ -26,8 +26,7 @@ public class SpriteAnimator : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //animatedImage = GetComponent<Image>();
-        SetReference(currentFacingDirection);
+        animatedImage.sprite = spriteReferences[0];
     }
 
     // Update is called once per frame
@@ -36,7 +35,7 @@ public class SpriteAnimator : MonoBehaviour
 
     }
 
-    public void SetReference(FacingDirection newDirection)
+    public void SetReference(FacingDirection newDirection, float movementSpeed)
     {
         currentFacingDirection = newDirection;
 
@@ -59,19 +58,23 @@ public class SpriteAnimator : MonoBehaviour
         if (animCo != null)
             StopCoroutine(animCo);
 
-        animCo=StartCoroutine(PerformMove());
+        animCo=StartCoroutine(PerformMove(movementSpeed));
     }
 
-    private IEnumerator PerformMove()
+    private IEnumerator PerformMove(float movementSpeed)
     {
         isAnimatating = true;
         int currentSprite = (int)spriteRange.x;
-        while(currentSprite != (int)spriteRange.y)
+        while (isAnimatating)
         {
-            animatedImage.sprite = spriteReferences[currentSprite];
-            currentSprite++;
-            yield return new WaitForSeconds(animationDelayInSeconds);
+            currentSprite = (int)spriteRange.x;
+            while (currentSprite <= (int)spriteRange.y)
+            {
+                animatedImage.sprite = spriteReferences[currentSprite];
+                currentSprite++;
+                yield return new WaitForSeconds(movementSpeed/4.0f);
+            }
         }
-        isAnimatating = false;
+        animatedImage.sprite = spriteReferences[(int)spriteRange.x];
     }
 }
