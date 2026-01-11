@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeMap(2, 0);
+        ChangeMap(0, 0);
     }
 
     public void ChangeMap(int mapID, int spawnLocationID)
