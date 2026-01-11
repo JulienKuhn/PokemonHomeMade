@@ -9,13 +9,13 @@ public class TriggerableEvent : MonoBehaviour
         Dialogue,
     }
 
+    [SerializeField] private MapController controller;
     [SerializeField] private EventType type;
     [SerializeField] private string[] conditions;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("trigger !");
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && controller.hasStarted)
         {
             GameManager.instance.TriggerCustomEvent(type, conditions);
         }

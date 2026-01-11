@@ -1,0 +1,2376 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Julien" at "2026-01-10T23:36:16.1980166Z"
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'fr' Physical Memory: 32716 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-01-10T23:36:16Z
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\6000.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/GitProjects/PokemonHomeMade/PokemonHomeMade2D
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+56160
+-licensingIpc
+LicenseClient-Julien
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: D:/GitProjects/PokemonHomeMade/PokemonHomeMade2D
+D:/GitProjects/PokemonHomeMade/PokemonHomeMade2D
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [34024]  Target information:
+
+Player connection [34024]  * "[IP] 192.168.1.99 [Port] 0 [Flags] 2 [Guid] 3289979076 [EditorId] 3289979076 [Version] 1048832 [Id] WindowsEditor(7,Julien) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [34024] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [34024] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 5.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+[Subsystems] Discovering subsystems at path D:/Unity/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitProjects/PokemonHomeMade/PokemonHomeMade2D/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     7989 MB
+    Driver:   32.0.15.8180
+Initialize mono
+Mono path[0] = 'D:/Unity/6000.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/6000.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/6000.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002636 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              110dd568c79c4f67870b96bec4ee92cd
+  Correlation Id:          c713ceac18fc57bf60b5f07c6f8c5f57
+  External correlation Id: 3958410154583093237
+  Machine Id:              xqqLuAXBL5pu09ROvVKQKL94Qik=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Julien" (connect: 0.00s, validation: 0.01s, handshake: 1.47s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Julien-notifications" at "2026-01-10T23:36:17.6785034Z"
+[Licensing::Module] Licensing Background thread has ended after 1.48s
+- Loaded All Assemblies, in  0.718 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.545 seconds
+Domain Reload Profiling: 1263ms
+	BeginReloadAssembly (297ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (278ms)
+		LoadAssemblies (295ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (271ms)
+			TypeCache.Refresh (270ms)
+				TypeCache.ScanAssembly (240ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (546ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (477ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (71ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 9071004324030-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.119 seconds
+Refreshing native plugins compatible for Editor in 2.48 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.767 seconds
+Domain Reload Profiling: 2885ms
+	BeginReloadAssembly (288ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (723ms)
+		LoadAssemblies (555ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (342ms)
+			TypeCache.Refresh (253ms)
+				TypeCache.ScanAssembly (233ms)
+			BuildScriptInfoCaches (72ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1768ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1574ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (300ms)
+			ProcessInitializeOnLoadAttributes (885ms)
+			ProcessInitializeOnLoadMethodAttributes (372ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.50 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6881 unused Assets / (5.1 MB). Loaded Objects now: 7699.
+Memory consumption went from 156.5 MB to 151.5 MB.
+Total: 12.374100 ms (FindLiveObjects: 1.098000 ms CreateObjectMapping: 0.350700 ms MarkObjects: 6.237200 ms  DeleteObjects: 4.686300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 46746.403063 seconds.
+  path: Assets/Graphisms/Tilesets/Indoor.png
+  artifactKey: Guid(f9c76804a9b2c74478561ab7515a8ab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/Indoor.png using Guid(f9c76804a9b2c74478561ab7515a8ab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a80cba86d2433832669608e448c58ba') in 1.5553086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 663
+
+========================================================================
+Received Import Request.
+  Time since last request: 790.551434 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_8.asset
+  artifactKey: Guid(38388ac4ba104564aa0177877c2855bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_8.asset using Guid(38388ac4ba104564aa0177877c2855bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1944312fbaff6ebd16025541844d502e') in 0.0803008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.783861 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_14.asset
+  artifactKey: Guid(2bcc2dc7305f2724880d87305a3454e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_14.asset using Guid(2bcc2dc7305f2724880d87305a3454e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66823ca52734f33834cf3891c7a6672d') in 0.0190164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.775708 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_15.asset
+  artifactKey: Guid(00d219195c99b484b9d75b15f295c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_15.asset using Guid(00d219195c99b484b9d75b15f295c6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea2459c76d16390acc9ff97db9de1ad4') in 0.0154773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.624563 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_23.asset
+  artifactKey: Guid(0f7b616cad621bd478bc028f39cd335e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_23.asset using Guid(0f7b616cad621bd478bc028f39cd335e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46320a04e5996b697a6b87766a96af31') in 0.0173235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.249440 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_26.asset
+  artifactKey: Guid(6852fc772ab6ea446bd1da7e6ac41b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_26.asset using Guid(6852fc772ab6ea446bd1da7e6ac41b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c5ebe53e6f555f12cea97f2ac263768') in 0.0172687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.244466 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_28.asset
+  artifactKey: Guid(e484dc2688d3eee4eb008e73dfbc4d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_28.asset using Guid(e484dc2688d3eee4eb008e73dfbc4d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38dc124cfee3047e981fe05d07f8bd70') in 0.0189618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.629500 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Outside_29.asset
+  artifactKey: Guid(ab9919ee81c8e154bb9de2426eff5322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Outside_29.asset using Guid(ab9919ee81c8e154bb9de2426eff5322) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '402a1393047f509476a01cb20359177f') in 0.0162673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 278.622751 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_463.asset
+  artifactKey: Guid(5b105411cd50f514992dd170ffbc6540) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_463.asset using Guid(5b105411cd50f514992dd170ffbc6540) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0084794ea5d7664447a1b7a5888bc507') in 0.034542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_382.asset
+  artifactKey: Guid(d800d62899cdd6c4381f5178e57469af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_382.asset using Guid(d800d62899cdd6c4381f5178e57469af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03478e1a9ebe93a9c451fc9cba5bf371') in 0.0104782 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_121.asset
+  artifactKey: Guid(c1326f064d3c7c54a99b7cddfa786c2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_121.asset using Guid(c1326f064d3c7c54a99b7cddfa786c2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2562d5d7dc9be9374dd096dbdb7efa77') in 0.0077945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_571.asset
+  artifactKey: Guid(6341b76f7b90e9c43aa97d570ad8c185) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_571.asset using Guid(6341b76f7b90e9c43aa97d570ad8c185) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a34457a52c77c729446214701d95d33') in 0.0092871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_268.asset
+  artifactKey: Guid(4af955cbf1a6a394bacc07542d68ba2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_268.asset using Guid(4af955cbf1a6a394bacc07542d68ba2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '748f443b94b1fc0e525e12056073e5f6') in 0.0120102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_250.asset
+  artifactKey: Guid(5491760b725019b48a774286ee62778a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_250.asset using Guid(5491760b725019b48a774286ee62778a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8c9ee527c82dc98894d611527589922') in 0.0088623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_190.asset
+  artifactKey: Guid(8f7aea9244b319d4eac7e42707bef5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_190.asset using Guid(8f7aea9244b319d4eac7e42707bef5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60163359fbbd02b95e2672f7c9909140') in 0.0091246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_533.asset
+  artifactKey: Guid(cfd354c53d57fb347803e9f98a2f110e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_533.asset using Guid(cfd354c53d57fb347803e9f98a2f110e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5134e430c6e393061f4015c7498765d5') in 0.0083903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_430.asset
+  artifactKey: Guid(457da4231dad92a45bb4d20ed45625be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_430.asset using Guid(457da4231dad92a45bb4d20ed45625be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0907077404af8daa25e9e117a47abed8') in 0.0079785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_333.asset
+  artifactKey: Guid(a3724bbc45ec2d649aea7f556315550d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_333.asset using Guid(a3724bbc45ec2d649aea7f556315550d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '38fe16692f061e91e63f82cb03d0cb98') in 0.0094683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_291.asset
+  artifactKey: Guid(1bf496f7a9cbe52439fe6bad62622144) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_291.asset using Guid(1bf496f7a9cbe52439fe6bad62622144) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '83fd9849797a168812fc1e08dae04b01') in 0.0096489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_220.asset
+  artifactKey: Guid(6537e03e7a006734eaa5b3952d16da0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_220.asset using Guid(6537e03e7a006734eaa5b3952d16da0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c98f812813730d3e535e7e01d2c6e16d') in 0.0101214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_659.asset
+  artifactKey: Guid(3b731b2ab21131948931d9d113265533) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_659.asset using Guid(3b731b2ab21131948931d9d113265533) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4c61a8ab0aa034b0ead34072f50fb1c') in 0.0102097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_200.asset
+  artifactKey: Guid(da5e7a21a33f54740b33e37b53cdc714) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_200.asset using Guid(da5e7a21a33f54740b33e37b53cdc714) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0147a44e8d4a614e6bf0457dc556ec26') in 0.009468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_452.asset
+  artifactKey: Guid(896b9c31f0f610746823aaf9c8c925b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_452.asset using Guid(896b9c31f0f610746823aaf9c8c925b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3313dffeb6355fb53da15348329a33d') in 0.0096778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_174.asset
+  artifactKey: Guid(64e4b1f9b6729964b99a872a520c124a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_174.asset using Guid(64e4b1f9b6729964b99a872a520c124a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c700ee2cef9838aa1a1661ed8eb51599') in 0.0088211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_70.asset
+  artifactKey: Guid(a8d7abf078185ae4bb08a1605ca6ddb1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_70.asset using Guid(a8d7abf078185ae4bb08a1605ca6ddb1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e0a1f781fe6363b8beaa660cb60c9d4') in 0.0081702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_410.asset
+  artifactKey: Guid(d6585bc0782192e4bac9f3aef5f4cabf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_410.asset using Guid(d6585bc0782192e4bac9f3aef5f4cabf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1ae8e85e4bc2cb00f04603892e2f189') in 0.0100006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_367.asset
+  artifactKey: Guid(e40eb98f70ae9bb40b0e08544f3d5335) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_367.asset using Guid(e40eb98f70ae9bb40b0e08544f3d5335) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '25d8ddc6df5f48e6f2d17f4941efca11') in 0.0106383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_267.asset
+  artifactKey: Guid(322049663e9fc1f4b8b546c56358b10a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_267.asset using Guid(322049663e9fc1f4b8b546c56358b10a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91703fd802c736ab55a66dd212dee59b') in 0.0099212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_265.asset
+  artifactKey: Guid(8da4609c67767d34bb8acfc3f4c3c1f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_265.asset using Guid(8da4609c67767d34bb8acfc3f4c3c1f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c996e772c4ac026f2b71ce2bb9d20d9') in 0.009851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_591.asset
+  artifactKey: Guid(2f89889a358b15946b830d0a2daf2e74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_591.asset using Guid(2f89889a358b15946b830d0a2daf2e74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31daa0b8d7cf111e6efdff45120bed16') in 0.010723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_302.asset
+  artifactKey: Guid(f04882929e6a52a45a16e9a052f30c67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_302.asset using Guid(f04882929e6a52a45a16e9a052f30c67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04ae887237206e1933fbcae97c8026ef') in 0.0836536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_593.asset
+  artifactKey: Guid(07b4de500dd4e67469a9f7133046bc31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_593.asset using Guid(07b4de500dd4e67469a9f7133046bc31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c14ae791340212e69bff6a4df06a9c5') in 0.0114415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_506.asset
+  artifactKey: Guid(b16585073035ae34b97607393cff36f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_506.asset using Guid(b16585073035ae34b97607393cff36f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0572e63a7a44a9d945133d6b9eb6649') in 0.0090104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_431.asset
+  artifactKey: Guid(c732dc3b523cfe446aa8c20d7cac7439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_431.asset using Guid(c732dc3b523cfe446aa8c20d7cac7439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50324e308d4b79edc32552d479f8c4bd') in 0.0091379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_54.asset
+  artifactKey: Guid(caeee9db977a5bf4db88ac5d528b2305) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_54.asset using Guid(caeee9db977a5bf4db88ac5d528b2305) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e33ccccc0bfd29774212b20b0905f65') in 0.0092704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_102.asset
+  artifactKey: Guid(f545edbf3724c9040adec5b1f5f74760) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_102.asset using Guid(f545edbf3724c9040adec5b1f5f74760) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d0212e41a9984b64565cfb293645fc8') in 0.007933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_370.asset
+  artifactKey: Guid(a79018f128f8cbe4f8d574e4b7d58b8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_370.asset using Guid(a79018f128f8cbe4f8d574e4b7d58b8b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b2870d83e1b33e589cbf55bb6013c6a8') in 0.0086237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_194.asset
+  artifactKey: Guid(65043db301930714785f926636db03aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_194.asset using Guid(65043db301930714785f926636db03aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62a43a03e25fb8a08673189501a0051f') in 0.0089212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_444.asset
+  artifactKey: Guid(4186a83485e87004f856ec89cea6733c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_444.asset using Guid(4186a83485e87004f856ec89cea6733c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb141bd1dfee1461bfe0530b9379a34d') in 0.0143634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_309.asset
+  artifactKey: Guid(b7d73cf55509be24fab812d4cadb81a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_309.asset using Guid(b7d73cf55509be24fab812d4cadb81a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5834caaca70e3bb6a9ef1139d7032172') in 0.0083554 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_566.asset
+  artifactKey: Guid(5ff9f35ed97ab974a8cc10687578f920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_566.asset using Guid(5ff9f35ed97ab974a8cc10687578f920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c76b295a4570e437928ce9bdd493a9f') in 0.0090225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_523.asset
+  artifactKey: Guid(d3efcac59ddeed74c8dbd82728f94964) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_523.asset using Guid(d3efcac59ddeed74c8dbd82728f94964) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '936aa80bd95855d8d7a20e6494d44d4b') in 0.0090725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_443.asset
+  artifactKey: Guid(4c11afe09543d6945853829afd745e77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_443.asset using Guid(4c11afe09543d6945853829afd745e77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a83b3044db5e2a123d760b217cc8b0d') in 0.0083986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_147.asset
+  artifactKey: Guid(db02ab4842f09ab4897f58da3b00da68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_147.asset using Guid(db02ab4842f09ab4897f58da3b00da68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b880d346f318e3d5e5ab15603d286e8') in 0.0088607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_36.asset
+  artifactKey: Guid(dd9831f2d22eaeb46bc5cfc922546ded) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_36.asset using Guid(dd9831f2d22eaeb46bc5cfc922546ded) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20c7787f93b36ad97aa1c94271fc4446') in 0.0102763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_517.asset
+  artifactKey: Guid(bb1e329ec3e58a741a13f0ff9d079c4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_517.asset using Guid(bb1e329ec3e58a741a13f0ff9d079c4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f2e5f419d91e244a289361e04d26601') in 0.0078681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_653.asset
+  artifactKey: Guid(e96d5b9c8d8c12e448b50f6b8cb4d618) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_653.asset using Guid(e96d5b9c8d8c12e448b50f6b8cb4d618) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c708cf194525787fbf94d436645e3556') in 0.008957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_68.asset
+  artifactKey: Guid(6372d0c2a731698428a50f3eb7b156d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_68.asset using Guid(6372d0c2a731698428a50f3eb7b156d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '507e532b95d8a205ea3206b1200fb28a') in 0.0103832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_393.asset
+  artifactKey: Guid(6529aca6775a9d4449dbe804e4212571) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_393.asset using Guid(6529aca6775a9d4449dbe804e4212571) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51c1557b8fa9dc41c26ab1a89a5c816a') in 0.0089726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_343.asset
+  artifactKey: Guid(7a6f118748d1e954da4535af54bfffc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_343.asset using Guid(7a6f118748d1e954da4535af54bfffc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a17af7b51469c931b8e20f2b08e28d10') in 0.010809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_478.asset
+  artifactKey: Guid(7fd3bc13bf8065c49bbadc927931b28c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_478.asset using Guid(7fd3bc13bf8065c49bbadc927931b28c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9e7da464420a59424e79d6003b9487d') in 0.0084702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_469.asset
+  artifactKey: Guid(58aa4576c285bd648851573c383b347d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_469.asset using Guid(58aa4576c285bd648851573c383b347d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dcd95a19520691928ffba000eeb19eed') in 0.0083123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_12.asset
+  artifactKey: Guid(d37dfee374fca2549a03997bccf2c9e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_12.asset using Guid(d37dfee374fca2549a03997bccf2c9e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4aa4958eed8df94374f13b79832eb838') in 0.0096953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_485.asset
+  artifactKey: Guid(a57d63320337ec945bbf816102636a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_485.asset using Guid(a57d63320337ec945bbf816102636a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c407a93811b348b4a2a7b2a5a4937e65') in 0.0098475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_454.asset
+  artifactKey: Guid(2a6df12513a94f44e9db07c286a93e5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_454.asset using Guid(2a6df12513a94f44e9db07c286a93e5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a396df7b90e27c8ee0013f76995fec5e') in 0.0083895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_278.asset
+  artifactKey: Guid(4dc144826bcdab24f92352ade8ab6f19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_278.asset using Guid(4dc144826bcdab24f92352ade8ab6f19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b4b7030bbb3ac9cd85a4143bab76798') in 0.0084417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_297.asset
+  artifactKey: Guid(9f8ba88bf0ea7b94fbedabd3da6f27f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_297.asset using Guid(9f8ba88bf0ea7b94fbedabd3da6f27f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df77d7172bfee1bda6c9a28248ba4c0e') in 0.010657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_69.asset
+  artifactKey: Guid(3a4b4b496830a6b46a742ceeb74d1023) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_69.asset using Guid(3a4b4b496830a6b46a742ceeb74d1023) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a0aa6f703bee5813d5b5b403622515c') in 0.0079599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_377.asset
+  artifactKey: Guid(a1886c89e97f3474b88a6210574f5557) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_377.asset using Guid(a1886c89e97f3474b88a6210574f5557) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a9136fd07a7927f2cb34df1c1a52876') in 0.0099284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_392.asset
+  artifactKey: Guid(338b908fadbe41647b35de1d1f53c9f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_392.asset using Guid(338b908fadbe41647b35de1d1f53c9f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6f6bf90840b7e012f0e6d0c5ffd23c5c') in 0.0080963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_293.asset
+  artifactKey: Guid(6c10fef2f860ce54a99f3943429fd2ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_293.asset using Guid(6c10fef2f860ce54a99f3943429fd2ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87d42ffd3879354f73abc2e28c1b812d') in 0.0079729 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_269.asset
+  artifactKey: Guid(b3bd0186be381694fae6d859cbed5918) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_269.asset using Guid(b3bd0186be381694fae6d859cbed5918) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bfddee03880cffbe2329009338243a3') in 0.0087315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_257.asset
+  artifactKey: Guid(cc5c8b36cb0f11d4ca7f51f37930ffe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_257.asset using Guid(cc5c8b36cb0f11d4ca7f51f37930ffe3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50b6ae2489a997cfca97f150b1f5511b') in 0.0095635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_561.asset
+  artifactKey: Guid(2dbdd9afc22566e46aa49bb3ad555269) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_561.asset using Guid(2dbdd9afc22566e46aa49bb3ad555269) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '711849f33f8a5b92aec719bcd86495ea') in 0.0109435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_336.asset
+  artifactKey: Guid(507dcfd1f1516394d8ec3bf801feb721) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_336.asset using Guid(507dcfd1f1516394d8ec3bf801feb721) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7683018d8b1f38be40ca355de23445c7') in 0.0085264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_371.asset
+  artifactKey: Guid(1677617d77eed4340b4e07d3ac35281a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_371.asset using Guid(1677617d77eed4340b4e07d3ac35281a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '112e0e6398219078282f1e24039c4447') in 0.0097195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_552.asset
+  artifactKey: Guid(144cccff55b3c8e4c93c375721be3a64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_552.asset using Guid(144cccff55b3c8e4c93c375721be3a64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dae5108161b0f599f04ecd67e8007fe5') in 0.0106545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_612.asset
+  artifactKey: Guid(e8337b2ad4eeed542847423cb0c8db37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_612.asset using Guid(e8337b2ad4eeed542847423cb0c8db37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe8491cb05ef6acb13007a665aca14ae') in 0.0108725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_301.asset
+  artifactKey: Guid(357edba38f49fdb45a81b762ca331c4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_301.asset using Guid(357edba38f49fdb45a81b762ca331c4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4be75d23bda26cbac217d71a25503831') in 0.0091523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_243.asset
+  artifactKey: Guid(64d62150ec7678b489e7cde04b399a3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_243.asset using Guid(64d62150ec7678b489e7cde04b399a3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '104f46c740044051edbb82890a40ac8f') in 0.0083433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_158.asset
+  artifactKey: Guid(a6cbc2f04b076bb48bcb432eeebab9ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_158.asset using Guid(a6cbc2f04b076bb48bcb432eeebab9ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e824fa962aca7e1d1fe56d991ba59e6') in 0.0093199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_80.asset
+  artifactKey: Guid(2e2d36aba3ba67a4abcadd090643cc83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_80.asset using Guid(2e2d36aba3ba67a4abcadd090643cc83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6dd369d0e384a0facc59ade648065a5a') in 0.0081589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_59.asset
+  artifactKey: Guid(d0c6d8a3ecd67f74b8bb26a4aeeed5ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_59.asset using Guid(d0c6d8a3ecd67f74b8bb26a4aeeed5ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ac47b18fbe3dd394e894dcc9e400d9a') in 0.0094767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_181.asset
+  artifactKey: Guid(e364a5ed3716b6c44ae4ad1ae487377d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_181.asset using Guid(e364a5ed3716b6c44ae4ad1ae487377d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0936f1a65e7aa2dbe3bd6b5bd8f055ce') in 0.0087012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_638.asset
+  artifactKey: Guid(77fe084564fb9e048b0fc77d1b9114c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_638.asset using Guid(77fe084564fb9e048b0fc77d1b9114c5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0825513552639cc6ef6ebf376a17b12') in 0.0090164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_374.asset
+  artifactKey: Guid(774cb3a86564b61408def9938d3b4681) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_374.asset using Guid(774cb3a86564b61408def9938d3b4681) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb6a71782c48405c22a30c74458c682d') in 0.0076604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_196.asset
+  artifactKey: Guid(fdc13b23e1e59a94c8cd9d864f01d1cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_196.asset using Guid(fdc13b23e1e59a94c8cd9d864f01d1cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afe37c043838d01662ba8bb03b487a75') in 0.0138213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_227.asset
+  artifactKey: Guid(c35633fc8b4108a49a16a5370193c68c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_227.asset using Guid(c35633fc8b4108a49a16a5370193c68c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c9aca83df2f9c6290357b0bd8cff411') in 0.0081212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_509.asset
+  artifactKey: Guid(d9c7e62f57acebd4d8e134bf7c1f463e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_509.asset using Guid(d9c7e62f57acebd4d8e134bf7c1f463e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63fb5d954b21eb882685a9deaac9a0aa') in 0.0098894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_60.asset
+  artifactKey: Guid(1f660cf29d5504a47ac3218501a187ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_60.asset using Guid(1f660cf29d5504a47ac3218501a187ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b5b80dfeaaa1efc55d7f4fc7440b79d') in 0.0089354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_609.asset
+  artifactKey: Guid(5bd1c7e3db72829469bfedb583614b06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_609.asset using Guid(5bd1c7e3db72829469bfedb583614b06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '50553a9f97c641489e7ff842f16398ff') in 0.0093097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_157.asset
+  artifactKey: Guid(692ec8cf13df8834cac51eb4796569f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_157.asset using Guid(692ec8cf13df8834cac51eb4796569f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3caec7882fa5232472d3fefcdb7cc97') in 0.0096037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_325.asset
+  artifactKey: Guid(794148cc3da10244b892d64c988cf8ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_325.asset using Guid(794148cc3da10244b892d64c988cf8ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a588098c3d3ea8358e0173084427d16') in 0.0084696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_84.asset
+  artifactKey: Guid(7c00f783088c78549a21056751849946) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_84.asset using Guid(7c00f783088c78549a21056751849946) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e9125d72828aaa1a2f9efdd2f48de4c') in 0.0082414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_477.asset
+  artifactKey: Guid(8e548ac44cbec744c842b7ff05c8a675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_477.asset using Guid(8e548ac44cbec744c842b7ff05c8a675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0da004be1df8302bd344ca8012184701') in 0.0082221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_258.asset
+  artifactKey: Guid(c8f5e837b9c12b149ad44df45a3e8331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_258.asset using Guid(c8f5e837b9c12b149ad44df45a3e8331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c27580951465bd112612ba79cb577bd9') in 0.01215 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_441.asset
+  artifactKey: Guid(c05fc5a230e8078489416dd8b36f75b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_441.asset using Guid(c05fc5a230e8078489416dd8b36f75b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2beb20ee95b0af3877c082bceeabd780') in 0.0112765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_290.asset
+  artifactKey: Guid(e5a0039fdd046e2498df2645eaccb627) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_290.asset using Guid(e5a0039fdd046e2498df2645eaccb627) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e106c74b480ea193fd1b0ea85ada800') in 0.0101803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_37.asset
+  artifactKey: Guid(b81e43d3f523df64fb462f3e834936a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_37.asset using Guid(b81e43d3f523df64fb462f3e834936a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0fd1bfc9fa06fe84e6f83b48a7a49249') in 0.0098337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_634.asset
+  artifactKey: Guid(e047ada8dec14ee45992c6917872236c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_634.asset using Guid(e047ada8dec14ee45992c6917872236c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0a93eb6d6d276c9a54709207e754bbb') in 0.0074682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_594.asset
+  artifactKey: Guid(fb4ee1856014efa46a7a1b84cebfe096) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_594.asset using Guid(fb4ee1856014efa46a7a1b84cebfe096) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0832bac249df8922d2f4d34dff4fd09') in 0.0092521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_280.asset
+  artifactKey: Guid(122806932e89b1c4283ae0c485c76d2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_280.asset using Guid(122806932e89b1c4283ae0c485c76d2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e4928f7ec7e7fdf7e24c4388e024f991') in 0.0093273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_394.asset
+  artifactKey: Guid(d459a56d901bba04cabb73544af0849d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_394.asset using Guid(d459a56d901bba04cabb73544af0849d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4eeaff500e21071e0a7aaead6fabe3fd') in 0.0083859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_358.asset
+  artifactKey: Guid(feda2ecef868b83489ac43d766e7ab2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_358.asset using Guid(feda2ecef868b83489ac43d766e7ab2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b49d0708619d887d2ea68ba8a1094e4c') in 0.009121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_434.asset
+  artifactKey: Guid(a8d003ca288cae840b1e5c18f0577045) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_434.asset using Guid(a8d003ca288cae840b1e5c18f0577045) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd9c7843db5a07ceffdcacc8805e51ecb') in 0.010012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_197.asset
+  artifactKey: Guid(b4af16da0f7210a4797b87b36bcaf32f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_197.asset using Guid(b4af16da0f7210a4797b87b36bcaf32f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ca0e87e5d358b2756feb46c210d3fb8') in 0.0094741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_481.asset
+  artifactKey: Guid(9de62d29df433d84589f313a104635cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_481.asset using Guid(9de62d29df433d84589f313a104635cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8e4db1a894bbc826e89a948af420871d') in 0.0096535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_482.asset
+  artifactKey: Guid(14a30b26ab135d54fad5d2c93c56fea5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_482.asset using Guid(14a30b26ab135d54fad5d2c93c56fea5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e8cab320a4f21b8b24dc255f8baca29') in 0.0088709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_185.asset
+  artifactKey: Guid(9dc706a842514ce48861a621be25f525) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_185.asset using Guid(9dc706a842514ce48861a621be25f525) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9773497427e49a1f0113a6e8569bb3e') in 0.007783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_24.asset
+  artifactKey: Guid(9403b6f30b7274b40b58da0f264c3be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_24.asset using Guid(9403b6f30b7274b40b58da0f264c3be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a434e70f1487f87544d93c9f66e827cd') in 0.0085893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_2.asset
+  artifactKey: Guid(8fc1f50b54dd97c4aab72444ce42a791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_2.asset using Guid(8fc1f50b54dd97c4aab72444ce42a791) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1295a038e81cbf80b5d587ad19d6c3ba') in 0.0105866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_605.asset
+  artifactKey: Guid(6017164b4c451a9499c4350c3fe02a9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_605.asset using Guid(6017164b4c451a9499c4350c3fe02a9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '17accd588c3cc0d03d42e4773d1ce3f6') in 0.0249629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_558.asset
+  artifactKey: Guid(7b9d7d9d4c472dd4b8f7ec40bd5af146) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_558.asset using Guid(7b9d7d9d4c472dd4b8f7ec40bd5af146) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'daf036122ab0abd1c037e4be3475a14f') in 0.0108974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_251.asset
+  artifactKey: Guid(3b11716f5d7fb954dacd613deabd1fd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_251.asset using Guid(3b11716f5d7fb954dacd613deabd1fd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab5bd4b95d18b02d018369d5f1d8373a') in 0.0100792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_628.asset
+  artifactKey: Guid(5cd6cd96f44cc5c4fa38b087630d70bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_628.asset using Guid(5cd6cd96f44cc5c4fa38b087630d70bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1db158c3d4a106bd83a6e9a048e99da3') in 0.0086039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_405.asset
+  artifactKey: Guid(b89b7dde9955d2048954fdc6720adb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_405.asset using Guid(b89b7dde9955d2048954fdc6720adb45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d605807e5456f37ddc4ac74cd5d9085') in 0.0106142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_406.asset
+  artifactKey: Guid(36c77a7f0d81a5e4883eaddc8ba58d3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_406.asset using Guid(36c77a7f0d81a5e4883eaddc8ba58d3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aff4db8c10b51d5809edb7e4d0e06f99') in 0.0088622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_581.asset
+  artifactKey: Guid(7c7c9b3efe07df140b540ee4bb7eab70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_581.asset using Guid(7c7c9b3efe07df140b540ee4bb7eab70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '91cd3f8940c35af4c3cd925ecd77d06c') in 0.0078896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_562.asset
+  artifactKey: Guid(0b44f681378da434dae885d7eadb172d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_562.asset using Guid(0b44f681378da434dae885d7eadb172d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c58eaf277cf435471ac586f8bbf8696e') in 0.0084707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_632.asset
+  artifactKey: Guid(2a445caa7ca04964398f3e4781d7dfd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_632.asset using Guid(2a445caa7ca04964398f3e4781d7dfd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20f4354ee367d606eb4f3d20a326ee3c') in 0.0085032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_344.asset
+  artifactKey: Guid(7dfdefbdd6103d943b667a44356cc61f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_344.asset using Guid(7dfdefbdd6103d943b667a44356cc61f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '217c8d63f27be687f7e0abe3f988e5fd') in 0.0086425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_79.asset
+  artifactKey: Guid(8b7e2ad468b3a694aa8cbc6c53fff9a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_79.asset using Guid(8b7e2ad468b3a694aa8cbc6c53fff9a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3acc45859b5135bde12ee82620214d27') in 0.0093783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_351.asset
+  artifactKey: Guid(823ebfb9378bf0946861c73a4bc3a83b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_351.asset using Guid(823ebfb9378bf0946861c73a4bc3a83b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eff20a9271c95a448a72206c15f40b53') in 0.0114171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_540.asset
+  artifactKey: Guid(48623d24fc195534f8407566c67dd85d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_540.asset using Guid(48623d24fc195534f8407566c67dd85d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '844a45c2d800c2e760a6523fc99f14e5') in 0.0097061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_645.asset
+  artifactKey: Guid(c3003368d8dd8de43a2fbe1ecc0201e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_645.asset using Guid(c3003368d8dd8de43a2fbe1ecc0201e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59f2e6bec63754f4705f6ca07e05448e') in 0.0098057 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_361.asset
+  artifactKey: Guid(70b9d847960e65241baa9796b814dcf0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_361.asset using Guid(70b9d847960e65241baa9796b814dcf0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd223d7102890be69db3b0a2aa57d2750') in 0.0091252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_162.asset
+  artifactKey: Guid(188863fac439ebb41878e523dc25d85b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_162.asset using Guid(188863fac439ebb41878e523dc25d85b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df826c0e9624050a94333e9c41f8c748') in 0.0100082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_236.asset
+  artifactKey: Guid(ef50ff56c06dd5343a6bda6f058790de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_236.asset using Guid(ef50ff56c06dd5343a6bda6f058790de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0a1cdc1acb689b923331d1d18c81664') in 0.0101223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_570.asset
+  artifactKey: Guid(355073baf75dfdf4b95b43c3b8649219) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_570.asset using Guid(355073baf75dfdf4b95b43c3b8649219) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0cd54bbdbde816771fc4b4da669683f') in 0.0088907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_340.asset
+  artifactKey: Guid(9be598077fa6bb643bc7effbb179edb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_340.asset using Guid(9be598077fa6bb643bc7effbb179edb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f13a789d3c1710da4cd0abce9487f2be') in 0.0082781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_462.asset
+  artifactKey: Guid(b42cbd42f99631349a7761be1ec45d52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_462.asset using Guid(b42cbd42f99631349a7761be1ec45d52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e8097b5e2421aa903be678394555a17') in 0.0091004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_516.asset
+  artifactKey: Guid(bf1dffc7ace993144ba8f3eaac9b678b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_516.asset using Guid(bf1dffc7ace993144ba8f3eaac9b678b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fa602d485945fc15758607845caf7232') in 0.0104254 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_210.asset
+  artifactKey: Guid(485eddd38d655f447aba439e31f801b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_210.asset using Guid(485eddd38d655f447aba439e31f801b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f7899dc0f7ec4b48e65ad7ffe1d2712') in 0.008962 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_541.asset
+  artifactKey: Guid(995ae2ff2b12f7c4db45cfff17fdf1e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_541.asset using Guid(995ae2ff2b12f7c4db45cfff17fdf1e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03f3d1ee21b26083a88863b634d9d7ca') in 0.0088822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_31.asset
+  artifactKey: Guid(e33649817135e314bb5e6b2c04290abb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_31.asset using Guid(e33649817135e314bb5e6b2c04290abb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c6e63e8c04d7510ac2d30f0e544032a') in 0.0090247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_544.asset
+  artifactKey: Guid(3a0fdcb11fefc5b4eb4776fb945da856) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_544.asset using Guid(3a0fdcb11fefc5b4eb4776fb945da856) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d78dc10be4ff9bb23e1de2e92effcfb') in 0.008259 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_350.asset
+  artifactKey: Guid(450f350f741637b4dacfd05123497b83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_350.asset using Guid(450f350f741637b4dacfd05123497b83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f128285a40f77cd79e079100255628bc') in 0.010846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_630.asset
+  artifactKey: Guid(11c8912392e607047a3a1e917843ada8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_630.asset using Guid(11c8912392e607047a3a1e917843ada8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4469ed052c0b85c1db0080b08dc70fe1') in 0.0092481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_312.asset
+  artifactKey: Guid(afc61e0925295444a94da588c0ca7eb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_312.asset using Guid(afc61e0925295444a94da588c0ca7eb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30dab54e08547c721eb29a6bae881047') in 0.0076439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_97.asset
+  artifactKey: Guid(8a0748e05b01d8c4292a6915a1856510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_97.asset using Guid(8a0748e05b01d8c4292a6915a1856510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '44fcfd8816ed39126414a8f18e943af3') in 0.0084988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_415.asset
+  artifactKey: Guid(ba1ea491eb9b5dd419754b1b485b88a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_415.asset using Guid(ba1ea491eb9b5dd419754b1b485b88a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecc41a0482080f99a8b8ce050ec38af0') in 0.0113607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_256.asset
+  artifactKey: Guid(b0dc1118896295c4691e4b34b910eb74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_256.asset using Guid(b0dc1118896295c4691e4b34b910eb74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b115003622efd78e154e6464b813cf1a') in 0.0085877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_50.asset
+  artifactKey: Guid(305df9e1ddd43a84aadc2c9c602863b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_50.asset using Guid(305df9e1ddd43a84aadc2c9c602863b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87c35f536abfc00044f63fa144e03a05') in 0.0119927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_22.asset
+  artifactKey: Guid(b3cec0101352e264aa3c06a1697efba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_22.asset using Guid(b3cec0101352e264aa3c06a1697efba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8139a0796a69f2179d81d006cbf2ae5') in 0.0084774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_195.asset
+  artifactKey: Guid(c38c4540f99e86b44b1956da0437338e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_195.asset using Guid(c38c4540f99e86b44b1956da0437338e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ac409c0ff133dc4fc8cfb34a04b176c') in 0.008503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_429.asset
+  artifactKey: Guid(00b39cd0a23b6c04db7899ab84ebfe1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_429.asset using Guid(00b39cd0a23b6c04db7899ab84ebfe1d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b0acea9036d13bbff90a3b05fe48b5d') in 0.0085874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_46.asset
+  artifactKey: Guid(06c86618ff396b84fae38dc2fa98a434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_46.asset using Guid(06c86618ff396b84fae38dc2fa98a434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cec87df6305cb5417f81dfdfd38ca5a5') in 0.0077383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_564.asset
+  artifactKey: Guid(879dc604c6e98304783d5b987023f653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_564.asset using Guid(879dc604c6e98304783d5b987023f653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f88476071d6bd3e97862d903e5644eca') in 0.0092766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_86.asset
+  artifactKey: Guid(2d58e108911524844b54ae45e4c78ea9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_86.asset using Guid(2d58e108911524844b54ae45e4c78ea9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bee0dc0a916723059b8085d1f3a04d59') in 0.0079513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_209.asset
+  artifactKey: Guid(fb6e422ce5a8a1f4ca6a04fe7e1d25dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_209.asset using Guid(fb6e422ce5a8a1f4ca6a04fe7e1d25dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92a6ac73b998206c80ae133cc658e0d4') in 0.0104663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_242.asset
+  artifactKey: Guid(c865691ab79b9db45a3d0848b6630450) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_242.asset using Guid(c865691ab79b9db45a3d0848b6630450) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0ecf5a44165c75ef1834d8ea28aa236') in 0.0080145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_91.asset
+  artifactKey: Guid(54d541b4eca8df74e919b21f61f07a89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_91.asset using Guid(54d541b4eca8df74e919b21f61f07a89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8f0805cfd4ec07d11da77996be462f5') in 0.0102163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_499.asset
+  artifactKey: Guid(afe3dd2d856fa2645897ec542238978d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_499.asset using Guid(afe3dd2d856fa2645897ec542238978d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5d522e2a6902d882fa51775fd059b60') in 0.0091819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_244.asset
+  artifactKey: Guid(32035da8be0278849b612d35ae80b406) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_244.asset using Guid(32035da8be0278849b612d35ae80b406) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0807cccabbeff50eeeeb037b4e16842') in 0.0079529 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_504.asset
+  artifactKey: Guid(6e79c8785016ef9488bd8d455a6a0c40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_504.asset using Guid(6e79c8785016ef9488bd8d455a6a0c40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc347434d1deb9655b849a135d611e7d') in 0.0095843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_61.asset
+  artifactKey: Guid(108a2fdccc7a7374d9df5982e70137a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_61.asset using Guid(108a2fdccc7a7374d9df5982e70137a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e05606095b6cd22a9214e3d2b63d41e2') in 0.0082268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_193.asset
+  artifactKey: Guid(b10cbcb16da8c1146864fd832fa30380) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_193.asset using Guid(b10cbcb16da8c1146864fd832fa30380) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36cc93f767fe5c042f77b51416785611') in 0.0087296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_99.asset
+  artifactKey: Guid(e9ba37a3c84247b49bb57c04c7c2648b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_99.asset using Guid(e9ba37a3c84247b49bb57c04c7c2648b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '25624474cdf22e0a30bd90afa29d989f') in 0.0082615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_364.asset
+  artifactKey: Guid(bfcbf0fd1f3f25e42a4b24a9e305e930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_364.asset using Guid(bfcbf0fd1f3f25e42a4b24a9e305e930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31d72801939e0070953bc602aca3af0b') in 0.0104001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_401.asset
+  artifactKey: Guid(c5e1580dd4ad2884b8858fdd998ad988) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_401.asset using Guid(c5e1580dd4ad2884b8858fdd998ad988) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33284bbe0b623c83ecb2e2ae5e9e9f84') in 0.0120409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_113.asset
+  artifactKey: Guid(40958fbb0f6309c43b8264649523a304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_113.asset using Guid(40958fbb0f6309c43b8264649523a304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e376c3f1d45ed158b03cccf5b98114d3') in 0.0111156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_289.asset
+  artifactKey: Guid(d05d40e27b47133499ec0b9ef1a7068d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_289.asset using Guid(d05d40e27b47133499ec0b9ef1a7068d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5718a869a38ac3d4620ba493bb4df040') in 0.0098366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_479.asset
+  artifactKey: Guid(03a0740b8aa494f4ab4da96e0b8b34eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_479.asset using Guid(03a0740b8aa494f4ab4da96e0b8b34eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48b4c8c3f5fc90abb13bb6a3d1224c2a') in 0.0112672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_362.asset
+  artifactKey: Guid(5c86fbec5d36d984e8f84d41fa90fa22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_362.asset using Guid(5c86fbec5d36d984e8f84d41fa90fa22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fff632d3c0062e9e389ad530e864cc26') in 0.0089609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_248.asset
+  artifactKey: Guid(fd55d715009b9fb4e83a429a86c98e0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_248.asset using Guid(fd55d715009b9fb4e83a429a86c98e0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fc3999ef9ba2917866284374c3038ff7') in 0.008693 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_42.asset
+  artifactKey: Guid(f74941bae509d1a48b63dc0a9c5add25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_42.asset using Guid(f74941bae509d1a48b63dc0a9c5add25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e835e19d8e9a0599e2b0c001cc41b96b') in 0.0082561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_596.asset
+  artifactKey: Guid(c762232d6f94fb64ab5fb0e5bf30ac37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_596.asset using Guid(c762232d6f94fb64ab5fb0e5bf30ac37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f5b40e3352c042bfd4aac1a192a9bf4') in 0.0079433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_335.asset
+  artifactKey: Guid(104b1e72729cb554f89698ba77a79b6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_335.asset using Guid(104b1e72729cb554f89698ba77a79b6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3984cc7ba4702d551cafda983d77f574') in 0.0101228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_245.asset
+  artifactKey: Guid(d85ab2e85e218da4fa283b4b243cac26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_245.asset using Guid(d85ab2e85e218da4fa283b4b243cac26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db51be312707bd180241b7ff218a1c57') in 0.0094318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_357.asset
+  artifactKey: Guid(eebd9670e78334d47b01d647e5ec848d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_357.asset using Guid(eebd9670e78334d47b01d647e5ec848d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '411526ac569b1534298bd480911315b4') in 0.0085765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_502.asset
+  artifactKey: Guid(6e0f8e6a43524eb4494a662a24c4befd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_502.asset using Guid(6e0f8e6a43524eb4494a662a24c4befd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a0cc6ad9e3a237405703c29de842994') in 0.0099614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_1.asset
+  artifactKey: Guid(167d116e16884bd4f8e994a08ee173a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_1.asset using Guid(167d116e16884bd4f8e994a08ee173a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '707549a2a3ff3d314bd1c59a6445c3e8') in 0.0085727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_274.asset
+  artifactKey: Guid(d89a0334b9df8b84b8bd41fdb4b8f416) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_274.asset using Guid(d89a0334b9df8b84b8bd41fdb4b8f416) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2429a48f5b8c771ca4f066d4c23c944b') in 0.0089147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_131.asset
+  artifactKey: Guid(e4a1c688feffdeb43aba425b0fabd1c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_131.asset using Guid(e4a1c688feffdeb43aba425b0fabd1c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c143220d3d680375f96da1e6d0459a8e') in 0.0077258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_349.asset
+  artifactKey: Guid(4759c2af0433bff41aaf4d5110e1d3d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_349.asset using Guid(4759c2af0433bff41aaf4d5110e1d3d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b3275be578589ee6f5aa0a50d3fb5e2') in 0.0078355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_563.asset
+  artifactKey: Guid(ce0d8c7df26e5094e815b4d960586a09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_563.asset using Guid(ce0d8c7df26e5094e815b4d960586a09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07351cbb3fbdb0c83b87e7571e741aaa') in 0.0083627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_400.asset
+  artifactKey: Guid(4c417295ac1ab8b4bacd8fb960c37c29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_400.asset using Guid(4c417295ac1ab8b4bacd8fb960c37c29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f42096dc0a8b9897fc9438c9ef8a58f') in 0.0092092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_411.asset
+  artifactKey: Guid(d8151b35ab4881049a716b0d45e73996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_411.asset using Guid(d8151b35ab4881049a716b0d45e73996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd1ae9982eee44c35ccccbe69cfea1e31') in 0.0091627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_315.asset
+  artifactKey: Guid(30dad6b00a4f1254bad82fbbaf39b277) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_315.asset using Guid(30dad6b00a4f1254bad82fbbaf39b277) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8f13f23f7bd00e73d0d3ebbc86d2df9c') in 0.0091845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_592.asset
+  artifactKey: Guid(541152e0e11a0ee4daa9699afcfab642) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_592.asset using Guid(541152e0e11a0ee4daa9699afcfab642) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f68ffd347dfd860127a2d4a7394da0c') in 0.0096604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_300.asset
+  artifactKey: Guid(8267cce4143435146814f1637bbe5231) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_300.asset using Guid(8267cce4143435146814f1637bbe5231) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd145174970c88a6283f052db4a1b3031') in 0.010327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_262.asset
+  artifactKey: Guid(1dd5b03ce6c681e47ab47d9b842c87a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_262.asset using Guid(1dd5b03ce6c681e47ab47d9b842c87a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04e221f259b7446cd6d838877352e545') in 0.009346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_395.asset
+  artifactKey: Guid(8913c7da24450ac419c52e9d70aa3363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_395.asset using Guid(8913c7da24450ac419c52e9d70aa3363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08fc2dffddd897f5a399b05d9f617bc0') in 0.0130054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_620.asset
+  artifactKey: Guid(71f9cd87218562d4e96a03266e742bb7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_620.asset using Guid(71f9cd87218562d4e96a03266e742bb7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18efb5fd4c0d7ae1605888ae46638472') in 0.0086054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_264.asset
+  artifactKey: Guid(ef1a0340a7fc762429213a08f652f5c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_264.asset using Guid(ef1a0340a7fc762429213a08f652f5c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96b65f4bb032cf0a4525029f7fca1587') in 0.0142138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_184.asset
+  artifactKey: Guid(f42b549ccc787fa4eb7d224e432aefce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_184.asset using Guid(f42b549ccc787fa4eb7d224e432aefce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cdced7d997ce2229f61c12cea53597d1') in 0.0128265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_168.asset
+  artifactKey: Guid(ef0a511b06eec0a4ea9366fd95682542) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_168.asset using Guid(ef0a511b06eec0a4ea9366fd95682542) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b1b54943e2c252a68d273e788900656') in 0.0170665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_205.asset
+  artifactKey: Guid(b080822f7328cf64ea4201d7560da2f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_205.asset using Guid(b080822f7328cf64ea4201d7560da2f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f171de3a41fcbe70c27a604544a0f3c') in 0.0101563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_414.asset
+  artifactKey: Guid(9e9d74ed6736b5e4ea908e7ab1c87ded) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_414.asset using Guid(9e9d74ed6736b5e4ea908e7ab1c87ded) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8b859b8600101e39d1871921d57de876') in 0.0109936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_126.asset
+  artifactKey: Guid(1acd3e81a310eb34280095e4b7be8d73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_126.asset using Guid(1acd3e81a310eb34280095e4b7be8d73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab66e5c5ee44609c48fe1d5493becfa7') in 0.0092476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_66.asset
+  artifactKey: Guid(dd4f4acc3ad718e44abce87b25c32925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_66.asset using Guid(dd4f4acc3ad718e44abce87b25c32925) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '671f0c2bd908bac5c356b71b2bee7744') in 0.0108408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_273.asset
+  artifactKey: Guid(6c30e6351296ca044b2fe64c2087ade8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_273.asset using Guid(6c30e6351296ca044b2fe64c2087ade8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb5312156df26a43b0ca4845e8269f3c') in 0.0100193 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_635.asset
+  artifactKey: Guid(ec3133ced8f15bd4c9c9bf9cde9281c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_635.asset using Guid(ec3133ced8f15bd4c9c9bf9cde9281c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69ea56a446899eef9fed55b8b18238b0') in 0.0074424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_19.asset
+  artifactKey: Guid(81abc8dff0e65d54fbbb5be92152bcbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_19.asset using Guid(81abc8dff0e65d54fbbb5be92152bcbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e132240359a01c9f68c31a1c54b09690') in 0.0080863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_348.asset
+  artifactKey: Guid(67f664f4251404d41bdac8297d2254c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_348.asset using Guid(67f664f4251404d41bdac8297d2254c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '078a612b1dea8b30ad820e908f8aac33') in 0.0097996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_409.asset
+  artifactKey: Guid(3bbe4a50be9163d4fbed38fef4707b43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_409.asset using Guid(3bbe4a50be9163d4fbed38fef4707b43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23df363355e97344fb11391c91d08a5a') in 0.0081239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_166.asset
+  artifactKey: Guid(8ea29831d17d9a24dad3ac759f28f78f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_166.asset using Guid(8ea29831d17d9a24dad3ac759f28f78f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bceb0f337c4598ce7a05546a02c93c99') in 0.0099687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_3.asset
+  artifactKey: Guid(d22fcc44879b95443a81bd4b0754c956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_3.asset using Guid(d22fcc44879b95443a81bd4b0754c956) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4165104b123788114c198f9e47afcd83') in 0.0083239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_511.asset
+  artifactKey: Guid(fe5f15d1a2e4cd84e8adeea78acf7e13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_511.asset using Guid(fe5f15d1a2e4cd84e8adeea78acf7e13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd520fb6f90333598632dc04c909bcede') in 0.0086964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_425.asset
+  artifactKey: Guid(0f160d3838b029948b12e615996177e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_425.asset using Guid(0f160d3838b029948b12e615996177e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e86feef964c7bc1b1066eff00befaaf3') in 0.0076784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_412.asset
+  artifactKey: Guid(c996dd280bb05474592477b9277b9561) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_412.asset using Guid(c996dd280bb05474592477b9277b9561) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a44b003f0eeb36cf6ee7e7ff85a90c9') in 0.0089803 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_145.asset
+  artifactKey: Guid(6dc46c5044f6c6d4d9d33dabcec70465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_145.asset using Guid(6dc46c5044f6c6d4d9d33dabcec70465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ab80fce4d77424b54560f367fa0d00f') in 0.0086059 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_208.asset
+  artifactKey: Guid(0cf62be492373bd488aaee50eeb61a0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_208.asset using Guid(0cf62be492373bd488aaee50eeb61a0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8f913409a30d00ec849b5d4f0443c43') in 0.0081898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_10.asset
+  artifactKey: Guid(acd7e63121c5a3b4bb4b8427fa004506) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_10.asset using Guid(acd7e63121c5a3b4bb4b8427fa004506) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3905e48a862c38165acc2532805d53a1') in 0.0093229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_320.asset
+  artifactKey: Guid(bd55c2c0cf376d545a2ab05b2eb0a2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_320.asset using Guid(bd55c2c0cf376d545a2ab05b2eb0a2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ed251c17d9a7213e532abbde4fab03e') in 0.010315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_217.asset
+  artifactKey: Guid(43fffebe4bb370b4ba65b4ee081cc090) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_217.asset using Guid(43fffebe4bb370b4ba65b4ee081cc090) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac73e01eab39601ce24763c2ea0cfa9a') in 0.0092937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_526.asset
+  artifactKey: Guid(ee4e57cf1c10b714490a41728c0e970d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_526.asset using Guid(ee4e57cf1c10b714490a41728c0e970d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df6cef1006a1e549df5b16eaac600daf') in 0.0081804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_88.asset
+  artifactKey: Guid(6a3d8539d2b36104c92471c92314de8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_88.asset using Guid(6a3d8539d2b36104c92471c92314de8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24bff44945cfa00cea2cced86a982e94') in 0.0080738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_520.asset
+  artifactKey: Guid(d66cb41e9dfd3b146b22749978c12d95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_520.asset using Guid(d66cb41e9dfd3b146b22749978c12d95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1200124da28d3355118097d744913e6c') in 0.0086265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_637.asset
+  artifactKey: Guid(151d3eeb2f5e0db4c878c53414b45c19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_637.asset using Guid(151d3eeb2f5e0db4c878c53414b45c19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f00ff51c262c8af504a0bc25fc71bb98') in 0.0085085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_326.asset
+  artifactKey: Guid(107eb9ab0f82b6a49a3ffc4e475538e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_326.asset using Guid(107eb9ab0f82b6a49a3ffc4e475538e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e93ad9fc0e7dbb89596dbf7ba11fa4d2') in 0.0104673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_539.asset
+  artifactKey: Guid(ae47112890c81964d9a3a41f7af8e920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_539.asset using Guid(ae47112890c81964d9a3a41f7af8e920) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5356074281c30291cfa8b74ece6dd4d4') in 0.0086126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_294.asset
+  artifactKey: Guid(c6622bc117bc2e04da4248cf96a40f4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_294.asset using Guid(c6622bc117bc2e04da4248cf96a40f4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b84c60de10e6991c37cb9b6394798970') in 0.0114355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_360.asset
+  artifactKey: Guid(c821026b21fd8c445af53a4ef4aed39e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_360.asset using Guid(c821026b21fd8c445af53a4ef4aed39e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e5d8e852bca615e100b20eefdbb8a26') in 0.0093327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_550.asset
+  artifactKey: Guid(16f5de7a318cdbe46841c2f31f6d6971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_550.asset using Guid(16f5de7a318cdbe46841c2f31f6d6971) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32db8a88a66f8190d39f3d9c7095225e') in 0.0084504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_644.asset
+  artifactKey: Guid(77d4949e7e60965479362a7ae13edf0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_644.asset using Guid(77d4949e7e60965479362a7ae13edf0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd96154bfc3a7bab06d6c1393e48354f7') in 0.007682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_198.asset
+  artifactKey: Guid(bbc138e3f1e00384eb36ab8488aa8a4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_198.asset using Guid(bbc138e3f1e00384eb36ab8488aa8a4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b6e911ede92f08b3fc8e903b3cc5cfe') in 0.0080976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_206.asset
+  artifactKey: Guid(3e9bca001b1c5d341993495f219438a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_206.asset using Guid(3e9bca001b1c5d341993495f219438a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd90cf30f120e1cbb8df1de6701a754fc') in 0.0087167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_182.asset
+  artifactKey: Guid(72e0fd59989fe4840ba9b56727362b3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_182.asset using Guid(72e0fd59989fe4840ba9b56727362b3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9130f404926ba54f743e8f6faf0cd1fc') in 0.0095401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_542.asset
+  artifactKey: Guid(1a1d7d3fa6f955d4bb2bb53ba6068e57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_542.asset using Guid(1a1d7d3fa6f955d4bb2bb53ba6068e57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f87c691480b599b35fcb466b11e33b5') in 0.0094445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_43.asset
+  artifactKey: Guid(d31e6692db6477d4cb07f3de4c1df775) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_43.asset using Guid(d31e6692db6477d4cb07f3de4c1df775) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f43ffb3ae77fcbef6b4bffb1f08b901a') in 0.0089961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_577.asset
+  artifactKey: Guid(658f32b55633a9b448841477183bb829) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_577.asset using Guid(658f32b55633a9b448841477183bb829) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6ff3e092eff69280000164b8a11fd81') in 0.0100342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_611.asset
+  artifactKey: Guid(20a228e168763da45b330be5923a11fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_611.asset using Guid(20a228e168763da45b330be5923a11fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b47675ee160df549f7dac850906859ca') in 0.0108584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_177.asset
+  artifactKey: Guid(f5d36cfc7877ff743a23435f5e69518a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_177.asset using Guid(f5d36cfc7877ff743a23435f5e69518a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cce725aa15a03a3b8be2663dfee2617c') in 0.0087889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_448.asset
+  artifactKey: Guid(c2d71bc7887f6d2408f3f61a4f434505) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_448.asset using Guid(c2d71bc7887f6d2408f3f61a4f434505) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a948b4770cd68040d285fc7988dd5a4a') in 0.0085956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_253.asset
+  artifactKey: Guid(1a8f44ba55ac2324c8c45cdcd766395a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_253.asset using Guid(1a8f44ba55ac2324c8c45cdcd766395a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'adc7393203b301b12eff4fd1402e213f') in 0.016771 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_460.asset
+  artifactKey: Guid(84807cf99b5e6db4da1714b316f47987) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_460.asset using Guid(84807cf99b5e6db4da1714b316f47987) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de45bb06faee55f24190f5e58a816599') in 0.0092064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_657.asset
+  artifactKey: Guid(db774e8110ca8a94390120e06a5381d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_657.asset using Guid(db774e8110ca8a94390120e06a5381d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '629039442d5693beb7b14b072cac511e') in 0.0113206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_466.asset
+  artifactKey: Guid(86a2c53e213fa6c44b29e3cc611f5ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_466.asset using Guid(86a2c53e213fa6c44b29e3cc611f5ca1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f09d62d8f834ce62fa1a6de39c9b420c') in 0.0098109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_219.asset
+  artifactKey: Guid(353d4337f795994458977593e3cd9da0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_219.asset using Guid(353d4337f795994458977593e3cd9da0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b1b5bb00cad0ca4453d666b3cf36f98') in 0.0087744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_647.asset
+  artifactKey: Guid(42a2bbb48b7ae0a49a9b0671922aca8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_647.asset using Guid(42a2bbb48b7ae0a49a9b0671922aca8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '34a36b50799b94ec4a256dd444c1d806') in 0.0085444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_204.asset
+  artifactKey: Guid(0c7aef2d57e5a284786967d1c40b0576) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_204.asset using Guid(0c7aef2d57e5a284786967d1c40b0576) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '433d62c01c83ec91d6efda44edd8684c') in 0.0098273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_476.asset
+  artifactKey: Guid(a1ed663bb7c8b2146bbf302f1d09c98f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_476.asset using Guid(a1ed663bb7c8b2146bbf302f1d09c98f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04d34c9121bebbf67ab9457f1d1349e8') in 0.0083665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_490.asset
+  artifactKey: Guid(e2d7e99d6efca37419ed7718c099fb91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_490.asset using Guid(e2d7e99d6efca37419ed7718c099fb91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4dc64871289c3dca5db200c6d5db7bba') in 0.0106965 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_655.asset
+  artifactKey: Guid(504cc764425d85d469fba8abdef586e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_655.asset using Guid(504cc764425d85d469fba8abdef586e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47a57231a022c481076308b713111237') in 0.0106595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_641.asset
+  artifactKey: Guid(bd7623baa02dd50498a8d2eac31c3cdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_641.asset using Guid(bd7623baa02dd50498a8d2eac31c3cdc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bac0f039ff707a40bb9f006ecbdfd892') in 0.0077861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_128.asset
+  artifactKey: Guid(1c3e5bec9f1b54c4483032c756f3ee92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_128.asset using Guid(1c3e5bec9f1b54c4483032c756f3ee92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'acc578c09f2f00fb6fcf8b545649792a') in 0.0098775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_555.asset
+  artifactKey: Guid(8bd1ad29fc4c01941a33ad4726fc5d87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_555.asset using Guid(8bd1ad29fc4c01941a33ad4726fc5d87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e00b2814ee61d6b18379ec213742edf0') in 0.0102949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_390.asset
+  artifactKey: Guid(99a1754c3ee3378418e523f1054a3b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_390.asset using Guid(99a1754c3ee3378418e523f1054a3b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80cb00b30849597baab62e4cb143f501') in 0.009579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_9.asset
+  artifactKey: Guid(0dba0cc51513ae94f873c6c7c6885749) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_9.asset using Guid(0dba0cc51513ae94f873c6c7c6885749) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a83a7355c28a149b771bed9c2462b7c4') in 0.0094808 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_191.asset
+  artifactKey: Guid(1a2a9c6e26f68a94ca019e2e00b04d0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_191.asset using Guid(1a2a9c6e26f68a94ca019e2e00b04d0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e1215c3699a49c84f03df348b23b616') in 0.0079816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_339.asset
+  artifactKey: Guid(7c8980c97c2c9cd4cb2b6df23f85c99d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_339.asset using Guid(7c8980c97c2c9cd4cb2b6df23f85c99d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b257da83de1ada752c039a138db95cd6') in 0.0096986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_259.asset
+  artifactKey: Guid(675126cc2b5085b43b55c03705df174a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_259.asset using Guid(675126cc2b5085b43b55c03705df174a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6360a13128e9586208be7ca5b16f5607') in 0.0092869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_486.asset
+  artifactKey: Guid(024eac65954675040b551fce3823ab0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_486.asset using Guid(024eac65954675040b551fce3823ab0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aec9287dbbb3e01e452eb2b37668d83b') in 0.0089134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_201.asset
+  artifactKey: Guid(ebf0fb2546534d34ab11eb65e65726e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_201.asset using Guid(ebf0fb2546534d34ab11eb65e65726e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6f28e45d6d056cfeb4ec7c0fbe208c14') in 0.0113439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_202.asset
+  artifactKey: Guid(1811393298157f746aeb9fdb6a4f0e11) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_202.asset using Guid(1811393298157f746aeb9fdb6a4f0e11) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c33b2ff94bb4e22ab2599575849f31c3') in 0.0101095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_218.asset
+  artifactKey: Guid(c32a5dde9fefe6a4faaacad16e6ba49c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_218.asset using Guid(c32a5dde9fefe6a4faaacad16e6ba49c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af2b7f6319c37046642a2da6abf4ef5b') in 0.0114304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_62.asset
+  artifactKey: Guid(26ca86b2338293544b628445c7e365bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_62.asset using Guid(26ca86b2338293544b628445c7e365bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49c057ffe27918e572641f5ad504371f') in 0.0096343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_599.asset
+  artifactKey: Guid(4375c97ba01ad9d48ba53308efd94ae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_599.asset using Guid(4375c97ba01ad9d48ba53308efd94ae0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6fe521207648d78ae042534ba9147ad9') in 0.0099536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_527.asset
+  artifactKey: Guid(f3a7814a396ca804f87d2d73d23566a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_527.asset using Guid(f3a7814a396ca804f87d2d73d23566a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b205a31daa10e7ced6d9959d8e3b1c21') in 0.0090118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_229.asset
+  artifactKey: Guid(f267dade36165fc46852aca16caed980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_229.asset using Guid(f267dade36165fc46852aca16caed980) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0cd1d43f195705c502d2ed9786fd05f1') in 0.0077582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_442.asset
+  artifactKey: Guid(1b5542afbb22396418f97a41e75c9c6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_442.asset using Guid(1b5542afbb22396418f97a41e75c9c6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02083e1e94845d52ecba22a62ce76d68') in 0.0095066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_560.asset
+  artifactKey: Guid(7f9d66a02ca4c3b4c8667999e665402f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_560.asset using Guid(7f9d66a02ca4c3b4c8667999e665402f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88184d74c372662f90540a2fba8df84a') in 0.0082703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_26.asset
+  artifactKey: Guid(02b0607080bf6ee43bc9493cb1fba656) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_26.asset using Guid(02b0607080bf6ee43bc9493cb1fba656) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '500bad7a741728a2c77c2203f9e48a3d') in 0.0105049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_633.asset
+  artifactKey: Guid(86cb222de5cbc3346bccda74bc40344e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_633.asset using Guid(86cb222de5cbc3346bccda74bc40344e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b61f192797417573b0e0ec2321a75875') in 0.0106122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_239.asset
+  artifactKey: Guid(5789d7b8f71e68a40807e579e348f935) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_239.asset using Guid(5789d7b8f71e68a40807e579e348f935) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95cbfd6b2ee32ef3fb40315bf87e6db5') in 0.0100567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_255.asset
+  artifactKey: Guid(fb8d40b3186b527438f47a98621e54f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_255.asset using Guid(fb8d40b3186b527438f47a98621e54f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '46650379f12c85f3bbfe275c9b3e51a3') in 0.0102584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_266.asset
+  artifactKey: Guid(c2e76c7e11949be40bce7fdaaba0f584) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_266.asset using Guid(c2e76c7e11949be40bce7fdaaba0f584) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d7f7dd495233637ad5a5aca37988a4c') in 0.0102613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_501.asset
+  artifactKey: Guid(3cf605c7c0ef0624ab0bdb6b79361ff3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_501.asset using Guid(3cf605c7c0ef0624ab0bdb6b79361ff3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c12793917d62ed69c61bbb3212fc2756') in 0.0086084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_347.asset
+  artifactKey: Guid(b2da27dee32e2164fb0c96e3f3e1a1ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_347.asset using Guid(b2da27dee32e2164fb0c96e3f3e1a1ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c8257d233130610a0ca6f89e78224e0') in 0.0097744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_480.asset
+  artifactKey: Guid(1f4c0d4fe190ce54985690f9ba9f6bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_480.asset using Guid(1f4c0d4fe190ce54985690f9ba9f6bf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9460efee87462e7a0021ec626d15e9b1') in 0.009173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_178.asset
+  artifactKey: Guid(6c8cbda0461700a45a7223bba45241dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_178.asset using Guid(6c8cbda0461700a45a7223bba45241dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '437b45cadf706c9788231eb2218bf6f4') in 0.0088157 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_522.asset
+  artifactKey: Guid(689a264afe9e35044bb85151d3229e8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_522.asset using Guid(689a264afe9e35044bb85151d3229e8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7d2d532f2ae57b721cf5c768143d013') in 0.0110044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_223.asset
+  artifactKey: Guid(57fb8afd12efa2d46a31bb4869241b71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_223.asset using Guid(57fb8afd12efa2d46a31bb4869241b71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06e4aa6edc28171322c56414156ee40e') in 0.0076939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_623.asset
+  artifactKey: Guid(813df85a7a8639d42bdeb7d1603d21cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_623.asset using Guid(813df85a7a8639d42bdeb7d1603d21cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7522eff41cbad0d2767c1579b9eb6400') in 0.0125225 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_621.asset
+  artifactKey: Guid(b0e5ee574b1aed441ade3bbdc200e6d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_621.asset using Guid(b0e5ee574b1aed441ade3bbdc200e6d0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '90b02be340e5adec4679cd7bc372a304') in 0.0105687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_119.asset
+  artifactKey: Guid(3694356287d4a8048a0a31f3f2f5bf56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_119.asset using Guid(3694356287d4a8048a0a31f3f2f5bf56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3a7cbec4905406f0145667e717a6515') in 0.0089086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_246.asset
+  artifactKey: Guid(5a0568e29b749a84183d1a27ba8c954e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_246.asset using Guid(5a0568e29b749a84183d1a27ba8c954e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e014585809d85cfd3751c70da9427bd1') in 0.0093453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_465.asset
+  artifactKey: Guid(9bcf3e0c592926449a59fad69b25f7f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_465.asset using Guid(9bcf3e0c592926449a59fad69b25f7f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1225bbe444c29abd3079a3b64db5dcb') in 0.0086188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_403.asset
+  artifactKey: Guid(a5d499f7bbfd8c04789cebef55fb07a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_403.asset using Guid(a5d499f7bbfd8c04789cebef55fb07a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fef1901408fba8d6ce21898c975c812e') in 0.0082987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_585.asset
+  artifactKey: Guid(1da5c7999d59a8c4a830a2b75c726706) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_585.asset using Guid(1da5c7999d59a8c4a830a2b75c726706) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abb3193dd644f81e6a856bd6bf099ef2') in 0.0096198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_353.asset
+  artifactKey: Guid(798239b058e165e458ed47ddad69ce77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_353.asset using Guid(798239b058e165e458ed47ddad69ce77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '896b4c0e672faf035efa1fa24303f2d6') in 0.0099825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_615.asset
+  artifactKey: Guid(141f7dac9c660e1458797f8befc14da4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_615.asset using Guid(141f7dac9c660e1458797f8befc14da4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88c8be8e9cac79ba00dcd9a212c94dde') in 0.01062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_240.asset
+  artifactKey: Guid(9e001089285972c46b43264ec2e59f4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_240.asset using Guid(9e001089285972c46b43264ec2e59f4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb73a5e89db5b43786d169c7318711bc') in 0.0159366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_337.asset
+  artifactKey: Guid(af094ad5236ee014f92d7feee5f9deed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_337.asset using Guid(af094ad5236ee014f92d7feee5f9deed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6379eb0ef63b0fa243a84c38b3e8241') in 0.0153185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_58.asset
+  artifactKey: Guid(8237b795328ca4143b9e9ebacf005caf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_58.asset using Guid(8237b795328ca4143b9e9ebacf005caf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc93b96230596f057bbe6ab62dd8e109') in 0.0089493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_13.asset
+  artifactKey: Guid(262601be3ee9e09429262fd637b321b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_13.asset using Guid(262601be3ee9e09429262fd637b321b1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '850066302f3d512113b55986299f241d') in 0.008236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_618.asset
+  artifactKey: Guid(a7ab89092ae9fc64f88e9a39e43f1175) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_618.asset using Guid(a7ab89092ae9fc64f88e9a39e43f1175) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2360d81037927d616a379970b1381a5') in 0.0109422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_450.asset
+  artifactKey: Guid(413005403ce20f541be5af8d822133a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_450.asset using Guid(413005403ce20f541be5af8d822133a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e954b52f199f3304bdab20de65e187ae') in 0.0156724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Graphisms/Tilesets/SubTiles/Indoor_553.asset
+  artifactKey: Guid(53febe8f6c0f55948a47b232769d741f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Graphisms/Tilesets/SubTiles/Indoor_553.asset using Guid(53febe8f6c0f55948a47b232769d741f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9446b5c552634658ef12ad512908a72e') in 0.0090271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

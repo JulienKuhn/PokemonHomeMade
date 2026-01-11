@@ -1,16 +1,26 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class EncounterArea : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Action OnAreaEnter;
+    [SerializeField] private GameObject overArea;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            overArea.SetActive(true);
+            OnAreaEnter?.Invoke();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            overArea.SetActive(false);
+        }
     }
 }

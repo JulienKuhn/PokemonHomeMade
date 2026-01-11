@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        ChangeMap(2, 0);
+    }
+
     public void ChangeMap(int mapID, int spawnLocationID)
     {
         player.StopMovement();
@@ -24,10 +29,10 @@ public class GameManager : MonoBehaviour
 
     public void TriggerCustomEvent(TriggerableEvent.EventType eventType, string[] eventConditions = null)
     {
-        Debug.Log("new event " + eventType.ToString());
         switch (eventType)
         {
             case TriggerableEvent.EventType.ChangeMap:
+                Debug.Log("new map " + eventConditions[0] + "-" + eventConditions[1]);
                 ChangeMap(int.Parse(eventConditions[0]), int.Parse(eventConditions[1]));
                 break;
             case TriggerableEvent.EventType.Dialogue:
