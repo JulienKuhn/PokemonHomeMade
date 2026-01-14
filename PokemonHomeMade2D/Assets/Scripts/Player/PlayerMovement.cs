@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public Vector3 footOffset = new Vector3(0f, -0.4f, 0f);
     private Coroutine movementCoroutine = null;
+    private int frameBuffer = 15;
+    private int frameCount = 0;
+    public bool CanMove = true;
 
     private void Awake()
     {
@@ -20,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!isMoving)
+        if (!isMoving && CanMove)
         {
             // Lecture des touches via le nouveau système
             var keyboard = Keyboard.current;
@@ -33,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
             else if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed) movementInput.y = -1;
             else if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed) movementInput.x = -1;
             else if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed) movementInput.x = 1;
+            else frameCount = 0;
 
             if (movementInput != Vector2.zero)
             {
@@ -45,7 +49,14 @@ public class PlayerMovement : MonoBehaviour
 
                 if (IsWalkable(targetPos))
                 {
-                    movementCoroutine = StartCoroutine(Move(targetPos));
+                    if (frameCount >= frameBuffer)
+                    {
+                        movementCoroutine = StartCoroutine(Move(targetPos));
+                    }
+                    else
+                    {
+                        frameCount++;
+                    }
                 }
             }
         }
@@ -75,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
             StopCoroutine(movementCoroutine);
 
         isMoving = false;
+        frameCount = 0;
         animator.SetBool("isMoving", isMoving);
     }
 

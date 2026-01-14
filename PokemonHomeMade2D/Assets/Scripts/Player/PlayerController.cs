@@ -8,4 +8,13 @@ public class PlayerController : MonoBehaviour
     {
         movement.StopMovements();
     }
+    public void Freeze()
+    {
+        movement.CanMove = true;
+    }
+
+    public void UnFreeze()
+    {
+        movement.CanMove = true;
+    }
 }
