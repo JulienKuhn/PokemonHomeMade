@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem; // Obligatoire pour le nouveau système
 
@@ -15,6 +17,10 @@ public class PlayerMovement : MonoBehaviour
     private int frameBuffer = 15;
     private int frameCount = 0;
     public bool CanMove = true;
+    private Vector2 lookingDirection = Vector2.down;
+    private float raycastDistance = 1.0f;
+    private RaycastableObject currentRaycastedObject = null;
+    [SerializeField] private LayerMask raycastLayer;
 
     private void Awake()
     {
@@ -58,7 +64,10 @@ public class PlayerMovement : MonoBehaviour
                         frameCount++;
                     }
                 }
+                lookingDirection = movementInput;
             }
+
+            CheckRaycast();
         }
 
         // On informe l'animator de l'état du mouvement
@@ -101,5 +110,31 @@ public class PlayerMovement : MonoBehaviour
             return false;
         }
         return true;
+    }
+    private void CheckRaycast()
+    {
+        // 1. Définir l'origine et la direction
+        Vector2 origin = transform.position;
+
+        // 2. Lancer le Raycast
+        RaycastHit2D hit = Physics2D.Raycast(origin, lookingDirection, raycastDistance, raycastLayer);
+
+       
+        // 3. Vérifier si on a touché quelque chose
+        if (hit.collider != null && hit.collider.TryGetComponent<RaycastableObject>(out currentRaycastedObject))
+        {
+            Debug.Log("Objet touché : " + hit.collider.name);
+            Debug.DrawRay(origin, lookingDirection * hit.distance, Color.red);
+            currentRaycastedObject.OnRaycastStart();
+        }
+        else
+        {
+            Debug.DrawRay(origin, lookingDirection * raycastDistance, Color.green);
+            if(currentRaycastedObject != null)
+            {
+                currentRaycastedObject.OnRaycastEnd();
+                currentRaycastedObject = null;
+            }
+        }
     }
 }

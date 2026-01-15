@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private List<MapController> maps;
     [SerializeField] private MapController currentMap;
 
+    public Action<int> OnMapLoaded;
     private void Awake()
     {
         instance = this;
@@ -21,5 +23,6 @@ public class MapManager : MonoBehaviour
 
         currentMap = Instantiate(maps[mapID]);
         currentMap.StartMap(spawnLocationID);
+        OnMapLoaded?.Invoke(mapID);
     }
 }
