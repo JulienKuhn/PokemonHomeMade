@@ -1,8 +1,12 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
     [SerializeField] private Vector3[] spawnLocations;
+    [SerializeField] private List<NPCController> Npcs;
 
     [Header("Camera Settings")]
     [SerializeField] private bool isCameraLocked;
@@ -22,4 +26,11 @@ public class MapController : MonoBehaviour
 
         hasStarted = true;
     }
+
+    public NPCController GetNPC(int id)
+    {
+        NPCController npc = Npcs.Where(n => n.NPCID == id).FirstOrDefault();
+        return npc;
+    }
+
 }

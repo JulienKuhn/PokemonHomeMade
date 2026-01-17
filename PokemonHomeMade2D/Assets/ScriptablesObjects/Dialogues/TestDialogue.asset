@@ -14,13 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   isTalkingHead: 0
   Lines:
-  - SpeakerName: Julien
-    Line: Yo les reufs
-  - SpeakerName: Robin
-    Line: Wesh alors, j'adore Jul !
-  - SpeakerName: Thibault
-    Line: "Seigneur des anneaux c'est \xE0 chier, je pr\xE9f\xE8re Star Wars de loiiiiiiin"
-  - SpeakerName: Julien
-    Line: Avoue
-  - SpeakerName: Thibault
-    Line: "J'ai jur\xE9 fr\xE8re."
+  - SpeakerName: 'Regis '
+    Line: "H\xE9 ! tu m'\xE9coute ?"
+  - SpeakerName: 'Regis '
+    Line: Tu avais l'air ailleurs le temps d'un instant.
+  - SpeakerName: 'Regis '
+    Line: "\xE7a t'arrive souvent ces derniers temps je trouve"
+  - SpeakerName: 'Regis '
+    Line: Ok alors, comme je te disais
+  - SpeakerName: 'Regis '
+    Line: "Mon grand p\xE8re est parti en ville quelques temps. Et j'ai un peu fouill\xE9
+      son laboratoire"
+  - SpeakerName: 'Regis '
+    Line: "Je suis tomb\xE9 sur 3 pokeballs ! \xE7a te dirais que l'on en prenne
+      un chacun pour un combat amical ? "
+  - SpeakerName: 'Regis '
+    Line: "C'est d\xE9cid\xE9 ! Le dernier au laboratoire de mon grand p\xE8re est
+      un Ombraf\xE9lin chauve ! "

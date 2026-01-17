@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -74,6 +75,7 @@ public class DialogueUIController : MonoBehaviour
         answerGroup.alpha = 0;
         dialogueCursor.gameObject.SetActive(false);
         dialogueText.text = "";
+        DialogueManager.instance.OnDialogueEnd?.Invoke();
     }
 
     private IEnumerator DoInfiniteBounce()

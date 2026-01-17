@@ -5,10 +5,8 @@ using UnityEngine;
 public class TalkToObjective : QuestObjective
 {
     public int RelatedMapID;
-    public Vector3 Location;
-    public Vector3 Size;
-
-    private RaycastableObject ObjectiveDialogue = null;
+    public int NpcID;
+    public int dialogueID;
 
     public override void StartObjective()
     {
@@ -18,37 +16,23 @@ public class TalkToObjective : QuestObjective
     {
         if (mapId == RelatedMapID)
         {
-            ObjectiveDialogue = Instantiate(QuestManager.instance.RaycastableObject);
-            ObjectiveDialogue.transform.localScale = Size;
-            ObjectiveDialogue.transform.position = Location;
-            ObjectiveDialogue.OnInteractionDone += this.OnInteractionDone;
-        }
-        else if (ObjectiveDialogue != null)
-        {
-            ObjectiveDialogue.OnInteractionDone = null;
-            Destroy(ObjectiveDialogue.gameObject);
-            ObjectiveDialogue = null;
+            MapController map = MapManager.instance.GetCurrentMap();
+            NPCController npc =  map.GetNPC(NpcID);
+            npc.OnNPCInteracted += this.OnInteractionDone;
+            Debug.Log("Setup");
         }
     }
 
     private void OnInteractionDone()
     {
-        ObjectiveDialogue.StartCoroutine(DoDialogue());
+        Debug.Log("OnInteractionDone");
+        DialogueManager.instance.OnDialogueEnd = this.OnDialogueEnd;
+        DialogueManager.instance.StartNewDialogue(dialogueID);
     }
 
-    private IEnumerator DoDialogue()
+    private void OnDialogueEnd()
     {
-        Debug.Log("Bonjour");
-        yield return new WaitForSeconds(.5f);
-        Debug.Log("ça va ?");
-        yield return new WaitForSeconds(.5f);
-        Debug.Log("Labise");
-        yield return new WaitForSeconds(.5f);
-        Debug.Log("bye");
-        yield return new WaitForSeconds(.5f);
-        ObjectiveDialogue.OnInteractionDone = null;
-        Destroy(ObjectiveDialogue.gameObject);
-        ObjectiveDialogue = null;
+        DialogueManager.instance.OnDialogueEnd = null;
         OnObjectiveComplete?.Invoke();
     }
 }

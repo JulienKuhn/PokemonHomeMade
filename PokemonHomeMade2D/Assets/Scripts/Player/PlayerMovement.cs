@@ -123,8 +123,8 @@ public class PlayerMovement : MonoBehaviour
         // 3. Vérifier si on a touché quelque chose
         if (hit.collider != null && hit.collider.TryGetComponent<RaycastableObject>(out currentRaycastedObject))
         {
-            Debug.Log("Objet touché : " + hit.collider.name);
-            Debug.DrawRay(origin, lookingDirection * hit.distance, Color.red);
+            //Debug.Log("Objet touché : " + hit.collider.name);
+            //Debug.DrawRay(origin, lookingDirection * hit.distance, Color.red);
             currentRaycastedObject.OnRaycastStart();
         }
         else

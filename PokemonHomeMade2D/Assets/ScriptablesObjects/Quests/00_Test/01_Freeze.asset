@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8573b734e1832a64c8eaacddedfabc62, type: 3}
-  m_Name: GotoObjective
-  m_EditorClassIdentifier: Assembly-CSharp::GotoObjective
-  RelatedMapID: 1
-  Location: {x: -17.5, y: -4.5, z: 0}
-  Size: {x: 1, y: 1, z: 10}
+  m_Script: {fileID: 11500000, guid: 4e53fe9ce10e5264d96f8f3595acba05, type: 3}
+  m_Name: 01_Freeze
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActionObjective
+  Action: 2

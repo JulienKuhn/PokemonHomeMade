@@ -8,7 +8,6 @@ public class QuestManager : MonoBehaviour
 
     [Header("Instantiables")]
     public GotoDetector GotoDetector;
-    public RaycastableObject RaycastableObject;
 
     private void Awake()
     {

@@ -14,7 +14,27 @@ public class QuestData : ScriptableObject
     public void StartQuest(int resumeTo = 0)
     {
         currentObjectiveIndex = resumeTo;
+        StartNewObjective();
+    }
+
+    private void OnObjectiveComplete()
+    {
+        currentObjective.OnObjectiveComplete = null;
+        currentObjectiveIndex++;
+        if (objectives.Count < currentObjectiveIndex)
+        {
+            Debug.Log("Quest in finished");
+        }
+        else
+        {
+            StartNewObjective();
+        }
+    }
+
+    private void StartNewObjective()
+    {
         currentObjective = objectives[currentObjectiveIndex];
+        currentObjective.OnObjectiveComplete += this.OnObjectiveComplete;
         currentObjective.StartObjective();
     }
 }

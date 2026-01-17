@@ -156,7 +156,7 @@ MonoBehaviour:
   moveSpeed: 5
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   footOffset: {x: 0, y: -0.5, z: 0}
   CanMove: 1
   raycastLayer:
@@ -3394,6 +3394,7 @@ GameObject:
   - component: {fileID: 979268964}
   - component: {fileID: 979268965}
   - component: {fileID: 979268966}
+  - component: {fileID: 979268967}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -3493,7 +3494,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestManager
   questData: {fileID: 11400000, guid: ccad300bf70271740b8b94c7cdfb8ce1, type: 2}
   GotoDetector: {fileID: 5114201892119479667, guid: f6ad0f545f104a44c87922f65a474622, type: 3}
-  RaycastableObject: {fileID: 6285621748910849762, guid: 46c0af31c80f4e4498997f0641193cdc, type: 3}
 --- !u!114 &979268966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3509,6 +3509,18 @@ MonoBehaviour:
   controller: {fileID: 2136037072}
   dialogues:
   - {fileID: 11400000, guid: e0f7cd785c6ce5a48958ee4717bb7472, type: 2}
+--- !u!114 &979268967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979268959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966798dd806dca341a7e92742a08885a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCManager
 --- !u!1 &1014283137
 GameObject:
   m_ObjectHideFlags: 0

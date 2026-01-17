@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80e7848181e293848802d100b325c227, type: 3}
-  m_Name: TestQuest
+  m_Name: 00_TestQuest
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   objectives:
-  - {fileID: 11400000, guid: 5e0667e061708e04d972fd09805cbd2d, type: 2}
-  - {fileID: 11400000, guid: e1c760fef0c6f7b4a8c9a3836aff76a0, type: 2}
+  - {fileID: 11400000, guid: 96396e4f9cbc38a4d8a15539ccc17378, type: 2}
+  - {fileID: 11400000, guid: 3b13b7db1679f624ab2ca401c7d5da7a, type: 2}
+  - {fileID: 11400000, guid: d74affdd5a3beef4ea1bd800d3871ea8, type: 2}
+  - {fileID: 11400000, guid: 7ba8a67ee5058834581deed61a355db2, type: 2}
+  - {fileID: 11400000, guid: d54edd77f4353e648812aee78718d7e4, type: 2}
   currentObjectiveIndex: 0
