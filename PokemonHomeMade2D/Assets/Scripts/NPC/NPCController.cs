@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class NPCController : MonoBehaviour
 {
@@ -169,5 +170,13 @@ public class NPCController : MonoBehaviour
 
         if (isWalking)
             Freeze();
+    }
+
+    public void SetInteractable(bool interactable)
+    {
+        if (interactable)
+            raycastableObject.OnInteractionDone += () => this.OnNPCInteracted?.Invoke();
+        else
+            raycastableObject.OnInteractionDone = null;
     }
 }

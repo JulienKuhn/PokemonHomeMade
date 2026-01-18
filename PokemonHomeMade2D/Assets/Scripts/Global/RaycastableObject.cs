@@ -14,9 +14,11 @@ public class RaycastableObject : MonoBehaviour
     Tweener tweener = null;
     Coroutine coroutine = null;
 
+    public bool isInteractable;
+
     public void OnRaycastStart()
     {
-        if (InteractionBubble.activeSelf) return;
+        if (InteractionBubble.activeSelf || !isInteractable) return;
 
         if (tweener != null)
             tweener.Kill();
@@ -30,7 +32,8 @@ public class RaycastableObject : MonoBehaviour
 
     public void OnRaycastEnd()
     {
-        if(tweener != null)
+        if (!isInteractable) return;
+        if (tweener != null)
             tweener.Kill();
 
         if(coroutine != null)

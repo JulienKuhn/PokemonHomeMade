@@ -23980,6 +23980,10 @@ PrefabInstance:
       value: Pokeball (2)
       objectReference: {fileID: 0}
     - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
+      propertyPath: isInteractable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
       propertyPath: InteractionBubble
       value: 
       objectReference: {fileID: 7406733202759128620}
@@ -24087,6 +24091,10 @@ PrefabInstance:
     - target: {fileID: 6469409551031455922, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
       propertyPath: m_Name
       value: Pokeball (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
+      propertyPath: isInteractable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
       propertyPath: InteractionBubble
@@ -24200,6 +24208,10 @@ PrefabInstance:
     - target: {fileID: 6469409551031455922, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
       propertyPath: m_Name
       value: Pokeball
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
+      propertyPath: isInteractable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9109089169500615053, guid: d4699d8b2a411744aa2e3e3b0e5be585, type: 3}
       propertyPath: InteractionBubble

@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e72eaf98b31a99c44adf10dabbbaefd8, type: 3}
-  m_Name: TestDialogue 5
+  m_Name: TestDialogue 7
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   isTalkingHead: 0
   Lines:
   - SpeakerName: Pokeball
-    Line: Voulez vous choisir Loutre?
+    Line: "Voulez vous choisir Ombraf\xE9lin?"
   Questions:
   - QuestionText: Oui
     Action: 3
     Parameters:
-    - 2
+    - 0
   - QuestionText: Non
     Action: 4
     Parameters: []

@@ -27,4 +27,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b5727b0859f0fde4c834e9967dcdbb32, type: 2}
   - {fileID: 11400000, guid: a4b6b1862c81012479aa45c658b07ba4, type: 2}
   - {fileID: 11400000, guid: 343f13cfb00b8c24d8918ee1e038b55b, type: 2}
+  - {fileID: 11400000, guid: 78ef404706ced6e4e88d3d113b491a37, type: 2}
+  - {fileID: 11400000, guid: 77ee94998c236cc46a063a78e06dc8f3, type: 2}
   currentObjectiveIndex: 14

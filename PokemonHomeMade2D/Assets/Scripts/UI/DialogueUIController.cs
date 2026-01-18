@@ -1,6 +1,8 @@
 using DG.Tweening;
+using NUnit.Framework;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -18,6 +20,7 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private CanvasGroup answerGroup;
     [SerializeField] private DialogueButton answerBTNPrefab;
 
+    private List<DialogueButton> instantiatedButtons = new List<DialogueButton>();
     private DialogueData currentDialogue = null;
     private Tweener cursorTweener, textTweener, canvasTweener;
     private bool hasPlayerClicked = false;
@@ -114,6 +117,7 @@ public class DialogueUIController : MonoBehaviour
                 btn.gameObject.SetActive(true);
                 btn.Setup(i, question.QuestionText);
                 btn.OnButtonClicked += (j) => selectedAnswer = j;
+                instantiatedButtons.Add(btn);
                 i++;
             }
             answerGroup.DOFade(1, .5f);
@@ -134,7 +138,11 @@ public class DialogueUIController : MonoBehaviour
             canvasTweener = null;
         }
 
-
+        foreach(var btn in instantiatedButtons)
+        {
+            Destroy(btn.gameObject);
+        }
+        instantiatedButtons = new List<DialogueButton>();
     }
 
     public void Quit()

@@ -21,10 +21,10 @@ MonoBehaviour:
       la main avec la pi\xE8ce tu choisi en premier, sinon c'est moi"
   Questions:
   - QuestionText: Gauche
-    Action: 4
+    Action: 5
     Parameters:
     - 3
   - QuestionText: Droite
-    Action: 4
+    Action: 5
     Parameters:
     - 3

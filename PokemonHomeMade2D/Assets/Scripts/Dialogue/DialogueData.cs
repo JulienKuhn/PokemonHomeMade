@@ -25,6 +25,7 @@ public class DialogueQuestion
         None,
         GiveItem,
         GiveCurrency,
+        GivePokemon,
         Quit,
         NewDialogue,
     }
