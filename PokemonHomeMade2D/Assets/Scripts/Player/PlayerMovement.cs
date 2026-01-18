@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem; // Obligatoire pour le nouveau système
@@ -74,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isMoving", isMoving);
     }
 
-    IEnumerator Move(Vector3 targetPos)
+    private IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
 
@@ -87,6 +88,30 @@ public class PlayerMovement : MonoBehaviour
         transform.position = targetPos;
         isMoving = false;
         movementCoroutine = null;
+    }
+
+    public void MoveToLocations(List<Vector3> pos,  Action callback )
+    {
+        StartCoroutine(DoMoves(pos, callback));
+    }
+
+    private IEnumerator DoMoves(List<Vector3> points, Action callback)
+    {
+        isMoving = true;
+        GameManager.instance.CanChangeMap = false;
+        foreach (var point in points) { 
+        while ((point - transform.position).sqrMagnitude > Mathf.Epsilon)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, point, moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        transform.position = point;
+        }
+        callback?.Invoke();
+        isMoving = false;
+        movementCoroutine = null;
+        GameManager.instance.CanChangeMap = true;
     }
 
     public void StopMovements()

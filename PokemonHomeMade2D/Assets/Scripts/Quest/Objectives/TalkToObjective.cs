@@ -30,7 +30,7 @@ public class TalkToObjective : QuestObjective
         DialogueManager.instance.StartNewDialogue(dialogueID);
     }
 
-    private void OnDialogueEnd()
+    private void OnDialogueEnd(int? id)
     {
         DialogueManager.instance.OnDialogueEnd = null;
         OnObjectiveComplete?.Invoke();

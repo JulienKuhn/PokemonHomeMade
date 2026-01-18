@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72eaf98b31a99c44adf10dabbbaefd8, type: 3}
+  m_Name: TestDialogue 3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  isTalkingHead: 0
+  Lines:
+  - SpeakerName: 'Regis '
+    Line: J'ai mis les pokeballs sur la table regarde !
+  - SpeakerName: 'Regis '
+    Line: "Ok j'ai une pi\xE8ce dans la main. Je les cache dans mon dos. Si tu trouve
+      la main avec la pi\xE8ce tu choisi en premier, sinon c'est moi"
+  Questions:
+  - QuestionText: Gauche
+    Action: 4
+    Parameters:
+    - 3
+  - QuestionText: Droite
+    Action: 4
+    Parameters:
+    - 3

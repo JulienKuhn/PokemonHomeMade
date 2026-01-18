@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private DialogueUIController controller;
     [SerializeField] private List<DialogueData> dialogues;
 
-    public Action OnDialogueEnd;
+    public Action<int?> OnDialogueEnd;
 
     private void Awake()
     {
@@ -24,5 +24,15 @@ public class DialogueManager : MonoBehaviour
     public void StartNewDialogue(int id )
     {
         controller.StartDialogue(dialogues[id]);
+    }
+
+    public void QuitDialogue()
+    {
+        controller.Quit();
+    }
+
+    public DialogueData GetDialogueById(int id)
+    {
+        return dialogues[id];
     }
 }

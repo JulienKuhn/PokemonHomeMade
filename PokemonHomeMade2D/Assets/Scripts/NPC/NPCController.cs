@@ -12,13 +12,18 @@ public class NPCController : MonoBehaviour
     public Animator NPCAnimator;
     public bool CanMove = true;
     [SerializeField] private RaycastableObject raycastableObject;
-    [SerializeField] private CanvasGroup group;
+    [SerializeField] private SpriteRenderer sprite;
+
 
     [Header("Walk Settings")]
     [SerializeField] private List<Transform> walkSpot;
     [SerializeField] private bool isLoopingPathway;
     [SerializeField] private float durationPerUnit;
     [SerializeField] private Vector2 waitingDurationSpan;
+
+    [Header("UI")]
+    [SerializeField] private Transform ExclamationMark;
+
     private int currentSpot = 0;
     private Coroutine walkingCo;
     private Tweener walkingTweener;
@@ -34,13 +39,29 @@ public class NPCController : MonoBehaviour
             ShowNPC();
         else
             HideNPC();
+
+
+        NPCManager.instance.OnNPCStatusChanged += this.OnNPCStatusChanged;
+    }
+
+    private void OnNPCStatusChanged(int id, bool show)
+    {
+        if (this.NPCID == id)
+        {
+            if (show)
+                ShowNPC();
+            else 
+                HideNPC();
+        }
     }
 
     public void ShowNPC()
     {
         if (isVisible) return;
+        Debug.Log(" show ");
 
-        group.DOFade(1, .5f);
+        sprite.DOFade(1, .5f);
+        GetComponent<BoxCollider2D>().enabled = true;
         raycastableObject.OnInteractionDone += this.OnInteractionDone;
         if (walkSpot.Count > 0)
             walkingCo = StartCoroutine(DoWalking());
@@ -51,8 +72,10 @@ public class NPCController : MonoBehaviour
     public void HideNPC()
     {
         if (!isVisible) return;
+        Debug.Log(" hide ");
 
-        group.DOFade(0, .5f);
+        sprite.DOFade(0, .5f);
+        GetComponent<BoxCollider2D>().enabled = false;
 
         isVisible = false;
     }
@@ -123,6 +146,21 @@ public class NPCController : MonoBehaviour
     {
         CanMove = true;
         walkingCo = StartCoroutine(DoWalking());
+    }
+
+    public void DoExclamationMark()
+    {
+        StartCoroutine(DoExclamationMarkAnimation());
+    }
+
+    public IEnumerator DoExclamationMarkAnimation()
+    {
+        ExclamationMark.localScale = Vector3.zero;
+        ExclamationMark.DOScale(Vector3.one, .65f).SetEase(Ease.OutBack);
+        yield return new WaitForSeconds(.7f);
+        ExclamationMark.DOScale(Vector3.zero, .4f).SetEase(Ease.InBack);
+        yield return new WaitForSeconds(.6f);
+        OnMovePerformed?.Invoke();
     }
 
     private void OnInteractionDone()

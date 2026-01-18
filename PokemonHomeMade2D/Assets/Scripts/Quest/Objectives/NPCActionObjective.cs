@@ -11,6 +11,7 @@ public class NPCActionObjective : QuestObjective
         Move,
         Show,
         Hide,
+        Exclamation,
     }
 
     [EnumToggleButtons]
@@ -23,14 +24,16 @@ public class NPCActionObjective : QuestObjective
     [ShowIf("Action", ActionType.Move)]
     public NPCMoveData MoveData;
 
+    private MapController map;
+    private NPCController npc;
+
     public override void StartObjective()
     {
+
         switch (Action)
         {
             case ActionType.Move:
-                MapController map = MapManager.instance.GetCurrentMap();
-                NPCController npc = map.GetNPC(NpcID);
-                npc.OnMovePerformed = this.OnMovePerformed;
+                SetupNPC();
                 npc.Move(MoveData.Points, MoveData.TravelTimePerUnit, MoveData.MovementEase);
                 break;
             case ActionType.Show:
@@ -41,8 +44,19 @@ public class NPCActionObjective : QuestObjective
                 NPCManager.instance.ChangeNPCHiddenStatus(NpcID, false);
                 OnObjectiveComplete?.Invoke();
                 break;
+            case ActionType.Exclamation:
+                SetupNPC();
+                npc.DoExclamationMark();
+                break;
         }
 
+    }
+
+    private void SetupNPC()
+    {
+        map = MapManager.instance.GetCurrentMap();
+        npc = map.GetNPC(NpcID);
+        npc.OnMovePerformed = this.OnMovePerformed;
     }
 
     private void OnMovePerformed()

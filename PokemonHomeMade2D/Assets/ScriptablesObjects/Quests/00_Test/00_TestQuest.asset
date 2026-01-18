@@ -18,4 +18,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d74affdd5a3beef4ea1bd800d3871ea8, type: 2}
   - {fileID: 11400000, guid: 7ba8a67ee5058834581deed61a355db2, type: 2}
   - {fileID: 11400000, guid: d54edd77f4353e648812aee78718d7e4, type: 2}
-  currentObjectiveIndex: 0
+  - {fileID: 11400000, guid: 8f625efaa9c344f43a4d1ed0d8dd7124, type: 2}
+  - {fileID: 11400000, guid: 593297a7a2e1c3f429d1dce07bff8f87, type: 2}
+  - {fileID: 11400000, guid: 5bff294f2f7059b4f953b4de00b94d2b, type: 2}
+  - {fileID: 11400000, guid: 72b98c646bb27bf44afae16242629191, type: 2}
+  - {fileID: 11400000, guid: 970ebee82ef981c4eb4912b543626259, type: 2}
+  - {fileID: 11400000, guid: 6c471a1f89bd6f840b29bbdd96b5605d, type: 2}
+  - {fileID: 11400000, guid: b5727b0859f0fde4c834e9967dcdbb32, type: 2}
+  - {fileID: 11400000, guid: a4b6b1862c81012479aa45c658b07ba4, type: 2}
+  - {fileID: 11400000, guid: 343f13cfb00b8c24d8918ee1e038b55b, type: 2}
+  currentObjectiveIndex: 14

@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,8 @@ public class RaycastableObject : MonoBehaviour
 {
     public Action OnInteractionDone;
     [SerializeField] private GameObject InteractionBubble;
+    [SerializeField] private Transform topSpot;
+    [SerializeField] private Transform bottomSpot;
     Tweener tweener = null;
     Coroutine coroutine = null;
 
@@ -51,12 +54,11 @@ public class RaycastableObject : MonoBehaviour
 
     private IEnumerator DoBubbleAnimation()
     {
-        InteractionBubble.transform.localPosition = new Vector3(0,180,0);
         while (InteractionBubble.activeSelf)
         {
-            tweener = InteractionBubble.transform.DOLocalMoveY(200, .9f).SetEase(Ease.InOutQuart);
+            tweener = InteractionBubble.transform.DOMove(topSpot.position, .9f).SetEase(Ease.InOutQuart);
             yield return new WaitForSeconds(1);
-            tweener = InteractionBubble.transform.DOLocalMoveY(180, .9f).SetEase(Ease.InOutQuart);
+            tweener = InteractionBubble.transform.DOMove(bottomSpot.position, .9f).SetEase(Ease.InOutQuart);
             yield return new WaitForSeconds(1);
         }
     }

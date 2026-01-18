@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [CreateAssetMenu(fileName = "QuestData", menuName = "Quest/Create new Quest")]
 public class QuestData : ScriptableObject
@@ -21,7 +22,7 @@ public class QuestData : ScriptableObject
     {
         currentObjective.OnObjectiveComplete = null;
         currentObjectiveIndex++;
-        if (objectives.Count < currentObjectiveIndex)
+        if (currentObjectiveIndex >= objectives.Count)
         {
             Debug.Log("Quest in finished");
         }

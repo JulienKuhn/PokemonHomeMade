@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private PlayerController player;
     public GameSave currentSave = new GameSave();
+    public bool CanChangeMap = true;
 
     private void Awake()
     {
@@ -20,6 +23,8 @@ public class GameManager : MonoBehaviour
 
     public void ChangeMap(int mapID, int spawnLocationID)
     {
+        if (!CanChangeMap) return;
+
         player.StopMovement();
         MapManager.instance.ChangeMap(mapID, spawnLocationID);
     }
@@ -32,6 +37,11 @@ public class GameManager : MonoBehaviour
     public void UnFreezePlayer()
     {
         player.UnFreeze();
+    }
+
+    public void MovePlayerToLocations(List<Vector3> pos, Action callback)
+    {
+        player.MovePlayerToLocations(pos, callback);
     }
 
     public void TeleportPlayerToLocation(Vector3 location)

@@ -16,11 +16,16 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private Transform dialogueCursor;
 
     [SerializeField] private CanvasGroup answerGroup;
-    [SerializeField] private Button answerBTNPrefab;
+    [SerializeField] private DialogueButton answerBTNPrefab;
 
     private DialogueData currentDialogue = null;
-    private Tweener tweener;
+    private Tweener cursorTweener, textTweener, canvasTweener;
+    private bool hasPlayerClicked = false;
+    private string currentWritingLine="";
+    private bool isLineSkipped = false;
+    private int selectedAnswer = 0;
 
+    private Coroutine uiCo = null;
     private void Start()
     {
         dialogueGroup.alpha = 0;
@@ -31,8 +36,36 @@ public class DialogueUIController : MonoBehaviour
 
     public void StartDialogue(DialogueData data)
     {
+        if(uiCo != null) 
+            StopCoroutine(uiCo);
+        if (cursorTweener != null && cursorTweener.IsPlaying())
+            cursorTweener.Kill();
+        if (textTweener != null && textTweener.IsPlaying())
+            textTweener.Kill();
+        if (canvasTweener != null && canvasTweener.IsPlaying())
+            canvasTweener.Kill();
         currentDialogue = data;
-        StartCoroutine(DoDialogue());
+        uiCo = StartCoroutine(DoDialogue());
+    }
+
+    private void Update()
+    {
+        var mouse = Mouse.current;
+
+        if (mouse != null && (mouse.leftButton.wasPressedThisFrame || mouse.rightButton.wasPressedThisFrame))
+        {
+            if(textTweener != null)
+            {
+                textTweener.Kill();
+                dialogueText.text = currentWritingLine;
+                textTweener = null;
+                isLineSkipped = true;
+            }
+            else
+            {
+                hasPlayerClicked = true;
+            }
+        }
     }
 
     private IEnumerator DoDialogue()
@@ -41,49 +74,89 @@ public class DialogueUIController : MonoBehaviour
         yield return new WaitForSeconds(.8f);
         foreach (var line in currentDialogue.Lines)
         {
+            isLineSkipped = false;
             speakerText.text = line.SpeakerName;
             dialogueText.text = "";
+            currentWritingLine = line.Line;
             dialogueCursor.gameObject.SetActive(false);
             yield return null;
-            float duration = line.Line.Length * 0.03f;
-            dialogueText.DOText(line.Line, duration);
-            yield return new WaitForSeconds(duration + .1f);
+            float duration = currentWritingLine.Length * 0.03f;
+            textTweener = dialogueText.DOText(currentWritingLine, duration);
+
+            float timer = 0;
+            while ((timer < duration + .1f) && !isLineSkipped)
+            {
+                yield return null;
+                timer += Time.deltaTime;
+            }
+            textTweener = null;
             dialogueCursor.gameObject.SetActive(true);
             Coroutine couroutine = StartCoroutine(DoInfiniteBounce());
-            bool hasPlayerClicked = false;
+            hasPlayerClicked = false;
 
             while (!hasPlayerClicked)
             {
-                var mouse = Mouse.current;
-
-                if (mouse != null && (mouse.leftButton.wasPressedThisFrame || mouse.rightButton.wasPressedThisFrame))
-                {
-                    hasPlayerClicked = true;
-                }
                 yield return null;
             }
 
-            if (tweener != null)
-                tweener.Kill();
+            if (cursorTweener != null)
+                cursorTweener.Kill();
 
             StopCoroutine(couroutine);
         }
+        if (currentDialogue.Questions.Count > 0) 
+        {
+            selectedAnswer = 999;
+            int i = 0;
+            foreach (var question in currentDialogue.Questions) 
+            {
+                DialogueButton btn = Instantiate(answerBTNPrefab, answerBTNPrefab.transform.parent);
+                btn.gameObject.SetActive(true);
+                btn.Setup(i, question.QuestionText);
+                btn.OnButtonClicked += (j) => selectedAnswer = j;
+                i++;
+            }
+            answerGroup.DOFade(1, .5f);
+            yield return new WaitWhile(() => selectedAnswer == 999);
+            DialogueManager.instance.OnDialogueEnd?.Invoke(selectedAnswer);
+            canvasTweener = null;
+        }
+        else
+        {
+            canvasTweener = dialogueGroup.DOFade(0, .5f);
+            yield return new WaitForSeconds(.8f);
+            DialogueManager.instance.OnDialogueEnd?.Invoke(null);
+            dialogueGroup.alpha = 0;
+            answerGroup.alpha = 0;
+            dialogueCursor.gameObject.SetActive(false);
+            dialogueText.text = "";
+            canvasTweener = null;
+        }
 
-        dialogueGroup.DOFade(0, .5f);
+
+    }
+
+    public void Quit()
+    {
+        uiCo = StartCoroutine(DoQuit());
+    }
+
+    private IEnumerator DoQuit()
+    {
+        canvasTweener = dialogueGroup.DOFade(0, .5f);
         yield return new WaitForSeconds(.8f);
         dialogueGroup.alpha = 0;
         answerGroup.alpha = 0;
         dialogueCursor.gameObject.SetActive(false);
         dialogueText.text = "";
-        DialogueManager.instance.OnDialogueEnd?.Invoke();
     }
 
     private IEnumerator DoInfiniteBounce()
     {
         while (true) {
-            tweener = dialogueCursor.DOLocalMoveY(dialogueCursor.localPosition.y + 5,1.2f).SetEase(Ease.Linear);
+            cursorTweener = dialogueCursor.DOLocalMoveY(dialogueCursor.localPosition.y + 5,1.2f).SetEase(Ease.Linear);
             yield return new WaitForSeconds(1.5f);
-            tweener = dialogueCursor.DOLocalMoveY(dialogueCursor.localPosition.y - 5, 1.2f).SetEase(Ease.Linear);
+            cursorTweener = dialogueCursor.DOLocalMoveY(dialogueCursor.localPosition.y - 5, 1.2f).SetEase(Ease.Linear);
             yield return new WaitForSeconds(1.5f);
         }
     }

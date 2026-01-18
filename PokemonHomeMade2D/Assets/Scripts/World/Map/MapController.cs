@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -33,4 +34,9 @@ public class MapController : MonoBehaviour
         return npc;
     }
 
+    [Button]
+    private void INSPECTOR_SEARCHNPCS()
+    {
+        Npcs = this.gameObject.GetComponentsInChildren<NPCController>().ToList();
+    }
 }

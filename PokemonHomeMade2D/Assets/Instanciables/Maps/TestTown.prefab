@@ -255,7 +255,7 @@ MonoBehaviour:
   Npcs:
   - {fileID: 5018753482315861884}
   isCameraLocked: 0
-  minBounds: {x: -0.5, y: 0}
+  minBounds: {x: -0.5, y: -5}
   maxBounds: {x: -0.5, y: 5}
   hasStarted: 0
 --- !u!1 &869940055830022790

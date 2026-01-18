@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,11 +12,16 @@ public class PlayerController : MonoBehaviour
     }
     public void Freeze()
     {
-        movement.CanMove = true;
+        movement.CanMove = false;
     }
 
     public void UnFreeze()
     {
         movement.CanMove = true;
+    }
+
+    public void MovePlayerToLocations(List<Vector3> pos, Action callback)
+    {
+        movement.MoveToLocations(pos, callback);
     }
 }
