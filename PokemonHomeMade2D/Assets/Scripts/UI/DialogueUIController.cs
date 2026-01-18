@@ -120,6 +120,7 @@ public class DialogueUIController : MonoBehaviour
             yield return new WaitWhile(() => selectedAnswer == 999);
             DialogueManager.instance.OnDialogueEnd?.Invoke(selectedAnswer);
             canvasTweener = null;
+            answerGroup.alpha = 0;
         }
         else
         {
