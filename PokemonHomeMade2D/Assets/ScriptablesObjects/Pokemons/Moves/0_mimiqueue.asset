@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906db9d7e6c551e45a988d0bea64c17f, type: 3}
+  m_Name: 0_mimiqueue
+  m_EditorClassIdentifier: Assembly-CSharp::MoveBase
+  moveName: Mimiqueue
+  moveID: 0
+  description: 
+  moveType: 1
+  moveIcon: {fileID: 0}
+  MainMove:
+    MoveType: 2
+    statusAlteration:
+      stat: 0
+      alterationDuration: 5
+      target: 0
+      statusToInflict: 0
+    power: 10
+    accuracyPercentage: 100
+    neverMisses: 0
+    maxPP: 25
+    priority: 0
+    target: 0
+    flatCritChance: 6.25
+  hasSecondaryEffect: 0
+  SecondaryMove:
+    MoveType: 0
+    statusAlteration:
+      stat: 0
+      alterationDuration: 0
+      target: 0
+      statusToInflict: 0
+    power: 0
+    accuracyPercentage: 100
+    neverMisses: 0
+    maxPP: 0
+    priority: 0
+    target: 0
+    flatCritChance: 6.25
+  contactMove: 0
+  soundBased: 0
+  isPunchMove: 0

@@ -4,22 +4,25 @@ public static class CustomEnums
 {
     public enum PokemonType
     {
-        None, 
-        Normal, 
-        Fire, 
-        Water, 
-        Grass, 
-        Electric, 
-        Ice, 
+        None,
+        Normal,
+        Fire,
+        Water,
+        Grass,
+        Electric,
+        Ice,
         Fighting,
-        Poison, 
-        Ground, 
-        Flying, 
-        Psychic, 
-        Bug, 
-        Rock, 
-        Ghost, 
+        Poison,
+        Ground,
+        Flying,
+        Psychic,
+        Bug,
+        Rock,
+        Ghost,
         Dragon,
+        Steel,
+        Dark,
+        Fairy,
     }
     public enum PokemonNature
     {
@@ -30,10 +33,13 @@ public static class CustomEnums
         Timid,
         Careful,
     }
-    public enum SpellCategory
+    public enum MoveType
     {
-        Physical, // Uses Attack vs Defense
-        Special,  // Uses SpAttack vs SpDefense
-        Status    // No damage, applies buffs/debuffs or status conditions
+        Physical,
+        Special,
+        Status
     }
+    public enum TargetType { Foe, Self, AllFoes, AllAllies }
+    public enum StatusCondition { None, Burn, Sleep, Poison, Paralyze, Freeze, Confused }
+    public enum Stat { Attack, Defense, SpecialAttack, SpecialDefense, Speed, Accuracy, Evasion }
 }

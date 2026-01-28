@@ -29,7 +29,7 @@ public class PokemonEntity
 
     public PokemonNature Nature { get; private set; }
 
-    public Dictionary<MoveBase, int> LearnedMoves { get; private set; }
+    public List<(MoveBase, int)> LearnedMoves { get; private set; }
     public float CurrentExp { get; private set; }
     public enum StatType { Attack, Defense, SpAttack, SpDefense, Speed }
 
@@ -52,12 +52,13 @@ public class PokemonEntity
         // Start at full health
         CurrentHP = MaxHP;
 
-        LearnedMoves = new Dictionary<MoveBase, int>();
+        LearnedMoves = new List<(MoveBase, int)>();
         foreach (var move in data.MovesByLevel)
         {
             if (level >= move.level)
             {
-                LearnedMoves.Add(move.moveBase, move.moveBase.maxPP);
+                MoveBase moveBase = PokemonManager.instance.GetMoveByID(move.moveBaseID);
+                LearnedMoves.Add((moveBase, moveBase.MainMove.maxPP));
             }
         }
     }

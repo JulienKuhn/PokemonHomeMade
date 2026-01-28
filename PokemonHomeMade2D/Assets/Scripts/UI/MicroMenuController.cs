@@ -1,11 +1,14 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 public class MicroMenuController : MonoBehaviour
 {
     [SerializeField] private GameObject mainFrame;
+    [SerializeField] private TextMeshProUGUI clock;
 
     [SerializeField] private Button pokemonBTN, inventoryBTN, pokedexBTN, notesBTN, saveBTN, settingsBTN, closeBTN;
     [SerializeField] private GameObject pokemonPanel, inventoryPanel, pokedexPanel, notesPanel, settingsPanel;
@@ -40,6 +43,7 @@ public class MicroMenuController : MonoBehaviour
         closeBTN.onClick.AddListener(() => OnClose?.Invoke());
 
         QuitGameBTN.onClick.AddListener(() => Application.Quit());
+        StartCoroutine(DoUpdateClock());
     }
 
     private void OpenPanel(Panel panel)
@@ -57,5 +61,18 @@ public class MicroMenuController : MonoBehaviour
     {
         OpenPanel(Panel.None);
         mainFrame.SetActive(isOpening);
+    }
+
+    public IEnumerator DoUpdateClock()
+    {
+        while (true) 
+        {
+            float time = WorldManager.instance.timeOfDay;
+            int hours = Mathf.FloorToInt(time);
+            int minutes = Mathf.FloorToInt((time - hours) * 60);
+            clock.text = $"{hours:D2}:{minutes:D2}";
+
+            yield return new WaitForSeconds(0.22f);
+        }
     }
 }

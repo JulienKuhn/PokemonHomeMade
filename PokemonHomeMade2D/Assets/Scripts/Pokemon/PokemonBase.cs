@@ -18,11 +18,11 @@ public class PokemonBase : ScriptableObject
     public Sprite WorldVisuals;
 
     [Header("Evolution")]
-    public int NextEvolutionID; // Référence directe au prochain SO
+    public int NextEvolutionID; // ID Of the next Pokemon
     public int LevelRequiredBeforeEvol;
 
     [Header("Learned Spells")]
-    public List<LearnableMove> MovesByLevel; // Utilise une liste pour l'inspecteur
+    public List<LearnableMove> MovesByLevel;
 
     [Header("Combat Stats")]
     public int BaseHP;
@@ -43,7 +43,7 @@ public class PokemonBase : ScriptableObject
 [System.Serializable]
 public class LearnableMove
 {
-    public MoveBase moveBase;
+    public int moveBaseID;
     public int level;
 }
 

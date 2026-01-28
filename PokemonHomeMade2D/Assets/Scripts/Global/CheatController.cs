@@ -91,6 +91,12 @@ public class CheatController : MonoBehaviour
         string keycmd = splittedcmd[0];
         switch (keycmd)
         {
+            case "help":
+                historyField.text += "Kill \n";
+                historyField.text += "save \n";
+                historyField.text += "changeMap {mapid} {spawnid} \n";
+                historyField.text += "setTime {hh.mm} \n";
+                break;
             case "kill":
                 //if (CombatController.Instance is null)
                 //{
@@ -112,6 +118,13 @@ public class CheatController : MonoBehaviour
                 }
                 catch (Exception ex) { historyField.text += "<color=\"red\"> Command changemap is Invalid </color>"; }
                 break;
+            case "settime":
+                try
+                {
+                    WorldManager.instance.timeOfDay = float.Parse(splittedcmd[1]);
+                }
+                catch (Exception ex) { historyField.text += "<color=\"red\"> Command setTime is Invalid, try 12.50 to set 12h30 </color>"; }
+                break ;
             default:
                 historyField.text += "<color=\"red\"> Command is unkown </color>";
                 break;
