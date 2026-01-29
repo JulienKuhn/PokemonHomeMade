@@ -11,26 +11,26 @@ public class PokemonEntity
 
     public string Name;
     // Individual Values (IVs) - Randomly generated from 0 to 31
-    public int IV_HP { get; private set; }
-    public int IV_Attack { get; private set; }
-    public int IV_Defense { get; private set; }
-    public int IV_SpAttack { get; private set; }
-    public int IV_SpDefense { get; private set; }
-    public int IV_Speed { get; private set; }
+    public int IV_HP;
+    public int IV_Attack;
+    public int IV_Defense;
+    public int IV_SpAttack;
+    public int IV_SpDefense;
+    public int IV_Speed;
 
     // Dynamic Stats (Calculated based on Level, Base Stats, and IVs)
-    public int MaxHP { get; private set; }
-    public int CurrentHP { get; private set; }
-    public int Attack { get; private set; }
-    public int Defense { get; private set; }
-    public int SpAttack { get; private set; }
-    public int SpDefense { get; private set; }
-    public int Speed { get; private set; }
+    public int MaxHP;
+    public int CurrentHP;
+    public int Attack;
+    public int Defense;
+    public int SpAttack;
+    public int SpDefense;
+    public int Speed;
 
-    public PokemonNature Nature { get; private set; }
+    public PokemonNature Nature;
 
-    public List<(MoveBase, int)> LearnedMoves { get; private set; }
-    public float CurrentExp { get; private set; }
+    public List<(MoveBase, int)> LearnedMoves;
+    public float CurrentExp;
     public enum StatType { Attack, Defense, SpAttack, SpDefense, Speed }
 
     public PokemonBase BaseData => pokemonBase;

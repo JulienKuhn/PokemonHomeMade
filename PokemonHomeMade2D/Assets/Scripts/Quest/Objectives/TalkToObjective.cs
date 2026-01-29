@@ -8,7 +8,7 @@ public class TalkToObjective : QuestObjective
     public int NpcID;
     public int dialogueID;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         MapManager.instance.OnMapLoaded += this.OnMapLoaded;
     }

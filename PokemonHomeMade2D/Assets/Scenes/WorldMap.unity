@@ -10206,6 +10206,7 @@ GameObject:
   - component: {fileID: 979268969}
   - component: {fileID: 979268970}
   - component: {fileID: 979268971}
+  - component: {fileID: 979268972}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -10328,6 +10329,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 955345d5de74a7b48ab460369b036d76, type: 2}
   - {fileID: 11400000, guid: dea2ee9e2f58d2d4aa9c90787c736c92, type: 2}
   - {fileID: 11400000, guid: 45264505b48a29c4f863e6a0bb09cf1f, type: 2}
+  - {fileID: 11400000, guid: b6d63b824d0545f4c840db1920c2f5e1, type: 2}
+  - {fileID: 11400000, guid: ab9c1c3358a95d748b49664929ae03f3, type: 2}
+  - {fileID: 11400000, guid: b8977e24b2cc25f4abc01e54d91fd5b2, type: 2}
 --- !u!114 &979268967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10502,22 +10506,125 @@ MonoBehaviour:
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   - pokemonBase: {fileID: 0}
     level: 0
     Name: 
+    IV_HP: 0
+    IV_Attack: 0
+    IV_Defense: 0
+    IV_SpAttack: 0
+    IV_SpDefense: 0
+    IV_Speed: 0
+    MaxHP: 0
+    CurrentHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    Nature: 0
+    CurrentExp: 0
   pokemonPC: []
+--- !u!114 &979268972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979268959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be904b61b96514aa8de51e5fbc12e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CombatManager
+  controller: {fileID: 1532425291}
 --- !u!1 &995957655
 GameObject:
   m_ObjectHideFlags: 0
@@ -16055,14 +16162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CombatController
   uiController: {fileID: 1532425290}
   Pokemon: {fileID: 11400000, guid: aac6106e1e5b1e645aed1c630f63f8cc, type: 2}
-  playerPokemon:
-    pokemonBase: {fileID: 11400000, guid: aac6106e1e5b1e645aed1c630f63f8cc, type: 2}
-    level: 1
-    Name: Player
-  enemyPokemon:
-    pokemonBase: {fileID: 11400000, guid: aac6106e1e5b1e645aed1c630f63f8cc, type: 2}
-    level: 1
-    Name: Opponent
+  playerPokemons: []
+  enemyPokemons: []
 --- !u!1 &1535676754
 GameObject:
   m_ObjectHideFlags: 0

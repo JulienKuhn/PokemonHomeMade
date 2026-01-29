@@ -12,33 +12,47 @@ public class CombatController : MonoBehaviour
 
     [Header("Participants")]
     public PokemonBase Pokemon;
-    public PokemonEntity playerPokemon;
-    public PokemonEntity enemyPokemon;
+    public List<PokemonEntity> playerPokemons;
+    public List<PokemonEntity> enemyPokemons;
 
-    [Header("UI Reference (Optionnel)")]
-    // public BattleHUD playerHUD;
-    // public BattleHUD enemyHUD;
+    private PokemonEntity enemyCurrentPokemon, playerCurrentPokemon;
 
+    private int? combatID;
     private CombatState state;
 
     void Start()
     {
+        
+    }
+
+    public void StartCombat(List<PokemonEntity> enemypokemons,int? combatID = null)
+    {
+        this.enemyPokemons = new List<PokemonEntity>();
+        foreach (var referencePokemon in enemypokemons)
+        {
+            PokemonEntity copy = new PokemonEntity(referencePokemon.BaseData, referencePokemon.Level);
+            this.enemyPokemons.Add(copy);
+        }
+        this.combatID = combatID;
+
+        playerPokemons = new List<PokemonEntity>();
+        var pk = new PokemonEntity(Pokemon, 2);
+        pk.Name = "Player";
+        playerPokemons.Add(pk);
+
         state = CombatState.START;
         StartCoroutine(SetupCombat());
-
-        playerPokemon = new PokemonEntity(Pokemon, 2);
-        playerPokemon.Name = "Player";
-        enemyPokemon = new PokemonEntity(Pokemon, 2);
-        enemyPokemon.Name = "Enemy";
     }
 
     private IEnumerator SetupCombat()
     {
-        // Ici, tu pourrais instancier les visuels avec enemyPokemon.BaseData.FrontVisuals
-        uiController.Log($"Un {enemyPokemon.Name} sauvage apparaît !");
+        playerCurrentPokemon = playerPokemons[0];
+        enemyCurrentPokemon = enemyPokemons[0];
+
+        uiController.Log($"Un {enemyCurrentPokemon.Name} sauvage apparaît !");
         yield return new WaitForSeconds(2f);
 
-        uiController.StartCombat(playerPokemon, ()=>this.DefineNextTurn());
+        uiController.StartCombat(playerCurrentPokemon, ()=>this.DefineNextTurn());
     }
 
     private void DefineNextTurn()
@@ -78,14 +92,14 @@ public class CombatController : MonoBehaviour
 
         // Récupérer l'attaque via ton manager
         MoveBase move = PokemonManager.instance.GetMoveByID(moveID);
-        uiController.Log($"{playerPokemon.Name} utilise {move.moveName} !");
+        uiController.Log($"{playerCurrentPokemon.Name} utilise {move.moveName} !");
 
         // Calcul des dégâts
-        ApplyDamage(move, playerPokemon, enemyPokemon);
+        ApplyDamage(move, playerCurrentPokemon, enemyCurrentPokemon);
 
         yield return new WaitForSeconds(1f);
 
-        if (enemyPokemon.IsKO())
+        if (enemyCurrentPokemon.IsKO())
         {
             state = CombatState.WON;
             EndBattle();
@@ -99,18 +113,18 @@ public class CombatController : MonoBehaviour
 
     private IEnumerator EnemyTurn()
     {
-        uiController.Log($"{enemyPokemon.Name} attaque !");
+        uiController.Log($"{enemyCurrentPokemon.Name} attaque !");
 
         // IA Simple : choisit la première attaque apprise
-        int randomizedMove = Random.Range(0, enemyPokemon.BaseData.MovesByLevel.Count - 1);
-        int enemyMoveID = enemyPokemon.BaseData.MovesByLevel[randomizedMove].moveBaseID;
+        int randomizedMove = Random.Range(0, enemyCurrentPokemon.BaseData.MovesByLevel.Count - 1);
+        int enemyMoveID = enemyCurrentPokemon.BaseData.MovesByLevel[1].moveBaseID;
         MoveBase move = PokemonManager.instance.GetMoveByID(enemyMoveID);
 
-        ApplyDamage(move, enemyPokemon, playerPokemon);
+        ApplyDamage(move, enemyCurrentPokemon, playerCurrentPokemon);
 
         yield return new WaitForSeconds(1f);
 
-        if (playerPokemon.IsKO())
+        if (playerCurrentPokemon.IsKO())
         {
             state = CombatState.LOST;
             EndBattle();
@@ -127,28 +141,39 @@ public class CombatController : MonoBehaviour
         Move moveData = moveBase.MainMove;
         float damage = 0;
 
-        if (moveData.IsDamaging)
+        int rand = Random.Range(0, 100);
+        if(rand <= moveData.accuracyPercentage)
         {
-            // Formule simplifiée inspirée du jeu officiel
-            float attackStat = (moveData.MoveType == CustomEnums.MoveType.Physical) ? attacker.Attack : attacker.SpAttack;
-            float defenseStat = (moveData.MoveType == CustomEnums.MoveType.Physical) ? target.Defense : target.SpDefense;
+            if (moveData.IsDamaging)
+            {
+                // Formule simplifiée inspirée du jeu officiel
+                float attackStat = (moveData.MoveType == CustomEnums.MoveType.Physical) ? attacker.Attack : attacker.SpAttack;
+                float defenseStat = (moveData.MoveType == CustomEnums.MoveType.Physical) ? target.Defense : target.SpDefense;
 
-            float baseDamage = (((2f * attacker.Level / 5f + 2f) * moveData.power * (attackStat / defenseStat)) / 50f) + 2f;
-            damage = baseDamage * Random.Range(0.85f, 1f); // Variation aléatoire
+                //damage = (((2f * attacker.Level / 5f + 2f) * moveData.power * (attackStat / defenseStat)) / 50f) + 2f;
+                damage = moveData.power;
+            }
+
+            target.ChangeHP(-Mathf.FloorToInt(damage));
+            uiController.Log($"{target.Name} reçoit {Mathf.FloorToInt(damage)} dégâts. PV restants : {target.CurrentHP}");
         }
-
-        target.ChangeHP(-Mathf.FloorToInt(damage));
-        uiController.Log($"{target.Name} reçoit {Mathf.FloorToInt(damage)} dégâts. PV restants : {target.CurrentHP}");
+        else
+        {
+            uiController.Log($"{attacker.Name} rate");
+        }
     }
 
     private void EndBattle()
     {
         if (state == CombatState.WON) uiController.Log("Victoire !");
         else if (state == CombatState.LOST) uiController.Log("Défaite...");
+
+        CombatManager.instance.FinshCombat(combatID, state == CombatState.WON);
+        uiController.StopCombat();
     }
 
     private bool isGameFinished()
     {
-        return playerPokemon.IsKO() || enemyPokemon.IsKO();
+        return playerCurrentPokemon.IsKO() || enemyCurrentPokemon.IsKO();
     }
 }

@@ -24,7 +24,7 @@ MonoBehaviour:
       alterationDuration: 0
       target: 0
       statusToInflict: 0
-    power: 20
+    power: 5
     accuracyPercentage: 80
     neverMisses: 0
     maxPP: 15

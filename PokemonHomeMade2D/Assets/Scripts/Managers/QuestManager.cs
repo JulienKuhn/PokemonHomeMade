@@ -6,6 +6,8 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] private QuestData questData;
 
+    private QuestData workingQuest;
+
     [Header("Instantiables")]
     public GotoDetector GotoDetector;
 

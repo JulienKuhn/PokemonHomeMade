@@ -27,7 +27,7 @@ public class NPCActionObjective : QuestObjective
     private MapController map;
     private NPCController npc;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
 
         switch (Action)

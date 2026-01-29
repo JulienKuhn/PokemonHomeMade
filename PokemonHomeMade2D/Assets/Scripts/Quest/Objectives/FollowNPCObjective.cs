@@ -12,7 +12,7 @@ public class FollowNPCObjective : QuestObjective
     [SerializeField] private List<Vector3> NPCPathway;
     [SerializeField] private List<Vector3> PlayerPathway;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         MapController map = MapManager.instance.GetCurrentMap();
         NPCController npc = map.GetNPC(NpcID);

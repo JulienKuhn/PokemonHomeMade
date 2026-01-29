@@ -10,7 +10,7 @@ public class ChoiceDialogueObjective : QuestObjective
     [SerializeField] private List<ChoiceDialogueOption> options;
     private ChoiceDialogueOption selectedOption;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         DialogueManager.instance.OnDialogueEnd = this.OnDialogueEnd;
 

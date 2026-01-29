@@ -19,7 +19,7 @@ public class CombatUIController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //StopCombat();
+        StopCombat();
         moveButtons[0].OnClick += () => this.OnSelection(0);
         moveButtons[1].OnClick += () => this.OnSelection(1);
         moveButtons[2].OnClick += () => this.OnSelection(2);

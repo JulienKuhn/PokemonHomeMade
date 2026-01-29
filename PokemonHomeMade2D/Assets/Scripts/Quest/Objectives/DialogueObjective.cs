@@ -5,7 +5,7 @@ public class DialogueObjective : QuestObjective
 {
     public int dialogueID;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         DialogueManager.instance.OnDialogueEnd = this.OnDialogueEnd;
         DialogueManager.instance.StartNewDialogue(dialogueID);

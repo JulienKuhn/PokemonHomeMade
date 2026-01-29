@@ -73,7 +73,6 @@ public class NPCController : MonoBehaviour
     public void HideNPC()
     {
         if (!isVisible) return;
-        Debug.Log(" hide ");
 
         sprite.DOFade(0, .5f);
         GetComponent<BoxCollider2D>().enabled = false;

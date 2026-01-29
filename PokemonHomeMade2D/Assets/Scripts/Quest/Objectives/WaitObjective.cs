@@ -6,7 +6,7 @@ public class WaitObjective : QuestObjective
 {
     [SerializeField] private float WaitingTime;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         GameManager.instance.StartCoroutine(this.DoWait());
     }

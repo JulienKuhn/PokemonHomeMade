@@ -15,7 +15,7 @@ public class PlayerActionObjective : QuestObjective
 
     public ActionType Action;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         switch (Action)
         {

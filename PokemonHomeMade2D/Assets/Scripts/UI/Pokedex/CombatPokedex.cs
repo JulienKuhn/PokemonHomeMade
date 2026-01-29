@@ -15,7 +15,7 @@ public class CombatPokedex : MonoBehaviour
         Scannerbtn.onClick.AddListener(() => this.OpenPanel(3));
         Logbtn.onClick.AddListener(() => this.OpenPanel(4));
 
-        OpenPanel(1);
+        OpenPanel(4);
     }
 
     public void OpenPanel(int panelNumber)

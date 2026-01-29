@@ -10,7 +10,7 @@ public class GotoObjective : QuestObjective
 
     private GotoDetector ObjectiveDetector = null;
 
-    public override void StartObjective()
+    public override void StartObjective(QuestData relatedQuest)
     {
         MapManager.instance.OnMapLoaded += this.OnMapLoaded;
     }
